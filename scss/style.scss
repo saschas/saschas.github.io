@@ -109,11 +109,16 @@ section#preview.open_iframe {
 }
 
 nav {
-  line-height: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 1em #000;
+  background-color: #000;
   z-index: 99999;
   position: absolute;
+  
+  a{
+    padding:1em;
+    cursor:pointer;
+    color:#eee;
+    display:inline-block;
+  }
 }
 
 //____________________________

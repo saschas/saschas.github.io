@@ -1,0 +1,84 @@
+$count : 300;
+$width : 500px;
+$height : 60px;
+$hole : 0px;
+$border : 10px;
+
+$max : 100;
+
+@if ($count >$max){
+  $max : 100;
+}
+@else{
+  $max : $count;
+}
+
+$r:0;
+$g:0;
+$b:0;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  overflow:hidden;
+  transform-style:preserve-3d;
+  transform:translateZ(1px);
+  perspective : 50px;
+  background:#1d1f20;
+}
+
+div{
+  
+  width:$width;
+  height:$height;
+  
+  //box-shadow:inset 0 0 1px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  transform-style:preserve-3d;
+  transform:translateZ(1px);
+  border-radius:50%;
+}
+
+@for $i from 1 through $count{
+ 
+  @if ($i <100){
+     $r : $r+1;
+  }
+  @if ($i >100 && $i<200){
+     $g : $g+1;
+  }
+  @if ($i >200){
+     $b : $b+1;
+  }  
+  div:nth-child(#{$i}){
+    background:rgba($r, $g, $b, 1);
+    z-index:$i;
+      animation: looper-#{$i} 25s infinite;
+  }
+  
+  @keyframes looper-#{$i}{
+    0%{
+      transform:rotate($i*(360/$max)*5 +deg) translateX((-$width/2) + $width + $hole) translateZ(-$i +px);
+    }
+    50%{
+      transform:rotate($i*(360/$max)*6 +deg) translateX((-$width/2) + $width + $hole) translateZ(-$i +px);
+    }
+    100%{
+      transform:rotate($i*(360/$max)*5 +deg) translateX((-$width/2) + $width + $hole) translateZ(-$i +px);
+    }
+  }
+}

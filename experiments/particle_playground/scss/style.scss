@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  width:100%;
+  height:100%;
+}
+body.menu-closed{
+  .callout {
+    transform: translateX(100%);
+  }
+  #close{
+    background:#f92672;
+  }
+}
+
+body.code-closed{
+  .CodeMirror {
+    opacity: 0;
+  }
+  #code_button{
+    background:#f92672;
+  }
+}
+
+#close,#code_button{
+      /* display: none; */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor:pointer;
+    background-color: #666;
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+
+#code_button{
+  top:42px;
+}
+$gradient_start:#aaa;
+$gradient_end:#eee;
+
+body{
+  overflow:hidden;
+  background:radial-gradient($gradient_start 0% , $gradient_end 50%);
+}
+
+canvas{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+#bounding{
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  box-shadow: 0 0 1px 0 #000;
+}
+
+.callout{
+  overflow: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    color: #222;
+    z-index: 99;
+    font-size: 80%;
+    font-family: sans-serif;
+    padding: .5em;
+  transition-duration:.25s;
+  transition-timing-function:ease-in;
+  h1{
+    font-size:1.2em;
+    color:#f92672;
+  }
+  h2{
+    font-size:1em;
+    line-height:1.4em;
+  }
+  p{
+    color:#444;
+    padding-bottom:1em;
+  }
+
+  button{
+    background:#f92672;
+    color:#fff;
+    border:0;
+    padding:.5em;
+    display:inline-block;
+    text-align:center;
+    left:50%;
+    width:50%;
+    position:relative;
+    transform:translateX(-50%);
+  }
+}
+
+#gravity_button{
+  position:absolute;
+  z-index:9999;
+}
+
+textarea{
+  opacity:0;
+}
+
+.special{
+  color : #f92672;
+}
+
+//__________________________ CODEMIRROR
+
+.CodeMirror{
+  font-size:1.2em;
+  line-height:1.6em;
+}
+.cm-s-monokai span.cm-string {
+    color: #74A8E6;
+}
+.cm-s-monokai span.cm-comment {
+    color: #ACACAC;
+}
+
+.cm-s-monokai .CodeMirror-gutters,.cm-s-monokai.CodeMirror{
+  background:transparent;
+}
+.cm-s-monokai span.cm-variable {
+    color: #D16A2D;
+}
+
+.cm-s-monokai span.cm-property, .cm-s-monokai span.cm-attribute {
+    color: #6A9BB8;
+}
+.cm-s-monokai span.cm-operator{
+    color: #828282;
+}
+
+span {
+  color:#333;
+}
+.cm-s-monokai span.cm-number {
+    color: #7DB081;
+}

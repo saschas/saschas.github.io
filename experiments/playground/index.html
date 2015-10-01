@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>canvas playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='http://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css'>
+<link rel='stylesheet prefetch' href='https://codemirror.net/theme/monokai.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <textarea id="code">
+options = {
+ gravity : {
+  bool : 0,
+  strength : 5
+ },
+ start : {
+   x : function(i){
+     return Math.sin(.2*i) * 20;
+   },
+   y : function(i){
+     return Math.cos(.5*i)* 20;
+   },
+ },
+ tick : {
+   x : function(i){
+     return Math.sin(.0005*i)
+   },
+   y : function(i){
+     return Math.cos(.0005*i)
+   }
+ },
+ speed : {
+   x : function(i){
+     return 1;
+   },
+   y : function(i){
+     return 1;
+   },
+  }
+}
+</textarea>
+
+<div class="callout">
+  <div id="close">x</div>
+  <div id="code_button">&lt;/&gt;</div>
+  <h1>canvas playground</h1>
+  <p>a little introduction to the canvas playground</p>
+  <h2>gravity</h2>
+  <p>If bool is set to <b>1</b> all points will start falling down. You can only play with the <b>strength</b>, the tick function is <b>not active</b> any more. By set it to <b>false</b> again all points will start to float again.</p>
+  <h2>start</h2>
+  <p>The initial position for each point where <b>i</b> is the index of a point. Any change will only be noticed if you hit the <b>reset button</b>.</p>
+  <h2 class="special">tick(1/60sek best)</h2>
+  <p>is called every frame for each point where <b>i</b> is the index of a point.</p>
+  <h2>speed</h2>
+  <p>speed for each point where <b>i</b> is the index of a point.</p>
+  <button id="reset">reset</button>
+</div>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/codemirror.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/javascript.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

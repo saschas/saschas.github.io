@@ -1,0 +1,57 @@
+//_________________________________________
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:sans-serif;
+  font-size:80%;
+  background:#1d1f20;
+}
+
+//_________________________________________
+
+.dg .cr.function {
+  border-left: 3px solid #fff!important;
+  background-color: #86cc8a!important;
+  span.property-name {
+    color: #222;
+    text-shadow: none;
+  }
+}
+
+//_________________________________________
+.stage{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  margin:auto;
+  &:after{
+    content:'';
+    display:block;
+    padding-top:70%;
+  }
+}
+
+.stage-content{
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-size:cover;
+  box-shadow:inset 0 0 1px 0 #000;
+  background-position:center center;
+  background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/bild-1.jpg);
+}

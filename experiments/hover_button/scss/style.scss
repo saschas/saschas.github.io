@@ -1,0 +1,106 @@
+/*****************************/
+$bg_color:#FFA500; // Buttongrundfarbe
+$main_color:#0094FF;// Hintergrundfarbe
+$sizer : 20px; // Kantenverschiebung
+
+
+$outer_width : 300px; // Breite des Buttoncontainers
+$outer_height : 100px;// Höhe des Buttoncontainers
+
+/*****************************/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  width:100%;
+  height:100%;
+}
+body{
+  background:$main_color;
+}
+/*****************************/
+// Dieser Container verdeckt alles 
+// überflüssige auf der linken Seite
+.btn_holder{
+  width:$outer_width;
+  height:$outer_height;
+  //background:rgba(0,0,0,.125);
+  position:absolute;
+  left:$sizer;
+  right:0;
+  bottom:0;
+  top:$sizer;
+  margin:auto;
+  
+  overflow:hidden; // damit nichts übersteht
+}
+
+.btn_holder_inner{
+  width:$outer_width - $sizer;
+  height:$outer_height - $sizer;
+  cursor:pointer;
+  background:$bg_color;
+  position:relative;
+  &:hover .btn-main{
+    transform:translateX(0px) translateY(0px) translateZ(0);
+  }
+}
+.btn-main{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:$main_color;
+  top:$sizer;
+  left:$sizer;
+  z-index:1;
+  transform-style:preserve-3d;
+  perspective:500px;
+  transition-duration:.5s;
+  /**********************************/
+  
+  transform:translateX(-$sizer) translateY(-$sizer) translateZ(0);
+  
+  /**********************/
+  // Text Style
+  /**********************/
+  text-align:center;
+  line-height:$outer_height;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color: $bg_color;
+  font-weight:bold;
+  font-family:sans-serif;
+  /**********************/
+  &:before,&:after{
+    content:'';
+    display:block;
+    position:absolute;
+  }
+  &:before{
+    content:'';
+    width:0;
+    height:0;
+    top:-$sizer*2;
+    right:0;
+    z-index:-1;
+    border:$sizer solid $bg_color;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top-color:transparent;
+  }
+  &:after{
+    content:'';
+    width:0;
+    height:0;
+    bottom:-$sizer;
+    left:-$sizer;
+    z-index:-2;
+    transform:translateZ(-2px);
+    border:$sizer solid $bg_color;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: -webkit-radial-gradient(#4777b0 0%, #201d31 100%);
+  background: radial-gradient(#4777b0 0%, #201d31 100%);
+}
+
+canvas {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-filter: drop-shadow(0 0 1em #1e1c2f);
+          filter: drop-shadow(0 0 1em #1e1c2f);
+}
+
+button {
+  display: none;
+}

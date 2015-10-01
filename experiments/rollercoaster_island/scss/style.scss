@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+	min-width: 100%;
+  	min-height: 100%;
+  	background-color: #fff;
+  	font-family: 'Lato', sans-serif;
+}
+
+body{
+	font-size:80%;
+	font-weight:lighter;
+	//cursor:none;
+  background:radial-gradient(#5ED0F6 0%, #4285F4 100%);
+}
+
+//_________________________________________ Note for touch
+
+
+
+body{
+	background: radial-gradient(#5ED0F6 0%, #4285F4 100%);
+	overflow:hidden;
+}
+
+canvas {
+  filter: drop-shadow(0 0 3em rgba(0,0,0,1));
+}
+img{
+	position:absolute;
+	display:none;
+}
+
+.mode{
+  height:110px;
+  position:relative;
+}
+
+.attraction{
+  height:220px;
+  position:relative;
+}
+
+div#info {
+  position: absolute;
+  width:50px;
+  height:100%;
+  right: 0;
+  z-index: 999;
+  top: 0;
+  color: #fff;
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+
+div.action {
+  background-color:rgba(0,0,0,.8);
+  position:absolute;
+  right:0;
+  width:50px;
+  height:50px;
+  cursor:pointer;
+  border-radius: 25px 0 0 25px;
+  transition-duration:.25s;
+  opacity:.75;
+  span{
+    position:absolute;
+    width:150px;
+    height:2em;
+    left:50px;
+    top:0;
+  }
+  &:before{
+    content:'';
+    display:block;
+    width:50px;
+    height:50px;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/iconset.png);
+    background-size:100%;
+  }
+  &:hover{
+    width:200px;
+     opacity:1;
+  }
+}
+
+
+@for $i from 1 through 6{
+  .action:nth-child(#{$i}){
+      $off : $i * 55px;
+      top:-50px + $off;
+      
+  }
+}
+
+$colors : #4285F4,#EA4335,#34A853,#FBBC05,#cccccc,#eeeeee;
+@for $i from 1 through 4{
+  .attraction .action:nth-child(#{$i}){
+    background-color:nth($colors, $i);
+  }
+}
+#vr_mode:before{
+  background-position:0 300px;
+}
+#desktop_mode:before{
+  background-position:0 250px;
+}
+
+#rollercoaster:before{
+    background-position:0 200px;
+}
+
+#ferris_wheel:before{
+  background-position:0 150px;
+  // background-position:0 100px;
+}
+
+#monster:before{
+  background-position:0 100px;
+    //background-position:0 50px;
+}
+#explore:before{
+    background-position:0 50px;
+}
+
+.mode{
+  .action{
+    border-radius:0;
+  }
+  #desktop_mode{
+    line-height:50px;
+  }
+}
+.attraction{
+  bottom:50px;
+  position:absolute;
+  right:0;
+  span{
+    text-transform:uppercase;
+    line-height:50px;
+    padding-left:5px;
+  }
+  
+}

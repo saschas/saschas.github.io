@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  min-height: 100%; }
+
+body {
+  font-size: 80%;
+  font-weight: normal;
+  background: #fff;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.filter .thumb {
+  display: none; }
+
+.filter.thumb .thumb.thumb {
+  display: block; }
+
+.filter.blender .thumb.blender {
+  display: block; }
+
+.filter.threejs .thumb.threejs {
+  display: block; }
+
+.filter.skeletal .thumb.skeletal {
+  display: block; }
+
+.filter.threeD .thumb.threeD {
+  display: block; }
+
+.filter.material .thumb.material {
+  display: block; }
+
+.filter.particles .thumb.particles {
+  display: block; }
+
+.filter.follow_camera .thumb.follow_camera {
+  display: block; }
+
+.filter.line .thumb.line {
+  display: block; }
+
+.filter.extrude_geometry .thumb.extrude_geometry {
+  display: block; }
+
+.filter.live_input .thumb.live_input {
+  display: block; }
+
+.filter.video .thumb.video {
+  display: block; }
+
+.filter.morph .thumb.morph {
+  display: block; }
+
+.filter.particle .thumb.particle {
+  display: block; }
+
+.filter.pointCloud .thumb.pointCloud {
+  display: block; }
+
+.filter.collision_detection .thumb.collision_detection {
+  display: block; }
+
+.filter.merged_geometry .thumb.merged_geometry {
+  display: block; }
+
+.filter.click_event .thumb.click_event {
+  display: block; }
+
+.filter.timing .thumb.timing {
+  display: block; }
+
+.filter.explosion .thumb.explosion {
+  display: block; }
+
+.filter.text_in_space .thumb.text_in_space {
+  display: block; }
+
+.filter.gravity .thumb.gravity {
+  display: block; }
+
+.filter.terrain .thumb.terrain {
+  display: block; }
+
+.filter.audioBuffer .thumb.audioBuffer {
+  display: block; }
+
+.filter.audio .thumb.audio {
+  display: block; }
+
+.filter.canvas .thumb.canvas {
+  display: block; }
+
+.filter.oscillator .thumb.oscillator {
+  display: block; }
+
+.filter.twoD .thumb.twoD {
+  display: block; }
+
+.filter.playground .thumb.playground {
+  display: block; }
+
+.filter.tweenjs .thumb.tweenjs {
+  display: block; }
+
+.filter.game .thumb.game {
+  display: block; }
+
+.filter.all .thumb {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6, a, p {
+  color: #000; }
+
+.thumb a {
+  text-decoration: none; }
+
+.thumb p {
+  font-size: 1em;
+  color: #666; }
+
+h1 {
+  margin: .5em;
+  margin-left: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #000000; }
+
+h2 {
+  color: #27738F;
+  font-size: 1.6em;
+  font-weight: 100; }
+
+iframe#view_experiment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  outline: none;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s; }
+
+section#preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background-color: #fff;
+  left: -100%;
+  opacity: 0; }
+
+section#preview.open_iframe {
+  display: block;
+  opacity: 1;
+  left: 0; }
+
+nav {
+  line-height: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 1em #000;
+  z-index: 99999;
+  position: absolute; }
+
+.info {
+  padding: 2em;
+  border-bottom: 6px solid #27738F;
+  background-color: #ccc; }
+  .info p, .info a {
+    color: #000; }
+
+.info-inner {
+  max-width: 800px;
+  margin: auto; }
+
+.tags span {
+  padding: .25em 1em;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+  background-color: #eee; }
+  .tags span:hover {
+    background-color: #F1CF8B; }
+  .tags span:active {
+    background-color: #71ABD8; }
+  .tags span.active {
+    background-color: #4D79B5;
+    color: #eee; }
+
+.own_tags span {
+  padding: 5px;
+  display: inline-block;
+  background-color: #eee;
+  margin: 20px 1px; }
+
+article {
+  margin-bottom: 2em; }
+
+article:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.thumb {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 2em 0;
+  position: relative;
+  border-bottom: 1px solid #ccc; }
+  .thumb:hover img {
+    -webkit-filter: grayscale(0) invert(0);
+            filter: grayscale(0) invert(0); }
+
+.thumb img {
+  width: 200px;
+  height: auto;
+  display: block;
+  float: left;
+  margin-right: 1em;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s; }
+
+.experiments {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  top: 0;
+  padding: 2em;
+  z-index: 999999; }
+
+.experiments-inner {
+  top: 0; }
+
+footer {
+  padding: 1em;
+  text-align: center; }
+
+@media screen and (max-width: 700px) {
+  .experiments {
+    padding: 1em; }
+
+  .own_tags {
+    display: none; }
+
+  .thumb img {
+    width: 40%; } }
+
+/*# sourceMappingURL=style.css.map */

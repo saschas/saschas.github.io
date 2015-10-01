@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+body{
+  overflow:hidden;
+  background:#000;
+}
+
+img{
+  display:none;
+}
+
+.no-touch #container{
+  -webkit-filter: blur(.05em) sepia(0.3);
+  -moz-filter: blur(.05em) sepia(0.3);
+  -o-filter: blur(.05em) sepia(0.3);
+  filter: blur(.05em) sepia(0.3);
+}
+div#container:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5em 2em #000;
+  -webkit-filter:blur(5px);
+}

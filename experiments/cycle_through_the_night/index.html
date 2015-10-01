@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>cycle through the night</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+img {
+  display: none;
+}
+
+.no-touch #container {
+  -webkit-filter: blur(0.05em) sepia(0.3);
+  -moz-filter: blur(0.05em) sepia(0.3);
+  -o-filter: blur(0.05em) sepia(0.3);
+  filter: blur(0.05em) sepia(0.3);
+}
+
+div#container:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5em 2em #000;
+  -webkit-filter: blur(5px);
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    
+<div id="container"></div>
+<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/man_texture.jpg' id="texture_man" crossOrigin="anonymous">
+
+<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/moon.jpg' id="texture_moon" crossOrigin="anonymous">
+
+<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/lamp.png' id="texture_lamp" crossOrigin="anonymous">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js'></script>
+<script src='http://paprcraft.com/js/orbit_controls.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

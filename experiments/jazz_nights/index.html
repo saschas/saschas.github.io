@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" id="morph">
+<head >
+	<meta charset="UTF-8">
+	<title>Sascha Sigl — Creative Coder</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/jazz.css">
+</head>
+<body>
+<div id="container"></div>
+<div id="texture_holder">
+<img src='assets/model/export_mesh/jazz/player_texture.jpg' id="texture_man" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/trumpet_texture.jpg' id="texture_saxo" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/stage_texture_base.png' id="texture_stage" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/piano_texture.jpg' id="texture_piano" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/drum_texture.jpg' id="texture_drum" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/trumpet_texture.jpg' id="texture_trumpet" crossOrigin="anonymous">
+<img src='assets/model/export_mesh/jazz/kontrabass_texture.jpg' id="texture_kontrabass" crossOrigin="anonymous">
+</div>
+<div id="loader">
+  <div id="loader-inner">
+    <div id="loader_bar"></div>
+    <div id="loader_audio_bar"></div>
+    <div id="play_button">Play</div>
+  </div>
+  
+</div>
+<audio controls id="jazz_song" loop crossOrigin="anonymous" preload="auto">
+  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/compare_to_what.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+
+	<script type="text/javascript" src="http://desandro.github.io/imagesloaded/imagesloaded.pkgd.js"></script>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script type="text/javascript" src="http://cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+	<script type="text/javascript" src="http://paprcraft.com/js/orbit_controls.js"></script>
+	<script type="text/javascript" src="assets/js/jazz.js"></script>
+</body>
+</html>

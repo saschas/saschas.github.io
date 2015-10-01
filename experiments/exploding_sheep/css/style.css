@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/cursor.png);
+  overflow: hidden;
+  background: -webkit-linear-gradient(#F9CD3F 0%, #FF94F6 37%, #4F7BBD 50%);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.copy_canvas {
+  pointer-events: none;
+  -webkit-filter: blur(3px);
+  -webkit-mask-box-image: -webkit-linear-gradient(black 40%, transparent 50%, transparent 70%, black 100%);
+}
+
+button {
+  position: absolute;
+  padding: .5em;
+}

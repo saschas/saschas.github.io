@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 80%;
+}
+
+img {
+  display: none;
+  position: absolute;
+}
+
+#info {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}

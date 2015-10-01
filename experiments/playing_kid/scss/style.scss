@@ -1,0 +1,29 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body{
+	min-width: 100%;
+  	min-height: 100%;
+  	background-color: #222;
+  	font-family: 'Lato', sans-serif;
+}
+
+body{
+	font-size:80%;
+	font-weight:lighter;
+	background: radial-gradient(#1A5970 0%,#000 100%);
+	overflow:hidden;
+}
+
+canvas {
+  filter: drop-shadow(0 0 3em rgba(0,0,0,1));
+}
+
+
+video#myVideo {
+  position: absolute;
+  top: 0;
+}

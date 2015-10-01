@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Press Start 2P', cursive;
+    font-weight:bolder;
+    box-sizing:border-box;
+}
+body {
+width: 100%;
+height: 100%;
+min-width:100%;
+min-height:100%;
+position: absolute;
+overflow: hidden;
+background: #212121; /* Old browsers */
+}
+
+#startMenu {
+width: 100%;
+height: 100%;
+background: rgba(255, 237, 200, 0.89);
+padding: 5%;
+text-align: center;
+line-height: 60px;
+}
+
+#startButton {
+width: 200px;
+height: 60px;
+background: rgb(161, 51, 51);
+color: #eee;
+line-height: 60px;
+margin: 100px auto;
+font-size: 20px;
+cursor:pointer;
+}
+#container {
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 9999999;
+pointer-events: none;
+}
+#info {
+width: 50%;
+margin: 0 auto;
+text-align: center;
+}
+#player{
+    background:#fff;
+    width:50px;
+    height:50px;
+    position : relative;
+    top:50%;
+    left:50%;
+    margin:-25px;
+/*border-radius: 50px;*/
+opacity: 0.5
+}
+#food {
+width: 50px;
+height: 50px;
+margin: -25px;
+background: #8B8B8B;
+position: absolute;
+}
+#food:after{
+   border: 2px dashed #ddd;
+}
+#menu {
+font-size: 30px;
+position: absolute;
+text-align: center;
+width: 100%;
+color: #DADADA;
+line-height: 20px;
+top: 20px;
+z-index: 9999;
+}
+#menu span {
+font-size: 40px;
+}
+
+#touchControlls {
+width: 200px;
+height: 200px;
+position: absolute;
+bottom: 50px;
+right: 50px;
+z-index:999999;
+}
+#touchControlls .touchButton {
+width: 80px;
+height: 80px;
+position: absolute;
+}
+
+#touchControlls #left {
+top: 50%;
+margin: -40px 0 0 0;
+left: 0;
+background-image: url('left.png');
+background-size: 100%;
+}
+#touchControlls #right {
+top: 50%;
+margin: -40px 0 0 0;
+right: 0;
+background-image: url('right.png');
+background-size: 100%;
+}
+#touchControlls #top {
+top: 0;
+left: 50%;
+margin:0 0 0 -40px;
+background-image: url('top.png');
+background-size: 100%;
+}
+#touchControlls #bottom {
+bottom: 0;
+left: 50%;
+margin:0 0 0 -40px;
+background-image: url('bottom.png');
+background-size: 100%;
+}
+#resultMenu{
+   width: 100%;
+height: 100%;
+background-color: rgba(43, 43, 43, 0.7);
+position: relative;
+font-size: 6em;
+text-align: center;
+color: #313131;
+z-index: 999999;
+}
+#textResult {
+position: absolute;
+text-align: center;
+width: 100%;
+top: 50px;
+}
+.anhang {
+width: 50px;
+height: 50px;
+margin:-25px;
+position:absolute;
+}
+
+.enemie{
+    width: 0;
+  height: 0;
+    border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #DB1B13;
+  position: relative;
+}
+
+.enemie:after{
+     width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top:10px solid #DB1B13;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -10px;
+}
+#heartContainer {
+}
+.heart {
+position: relative;
+width: 50px;
+height: 50px;
+display: inline-block;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height:30px;
+    background: #fc2e5a;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+}
+
+#splash {
+width: 100%;
+height: 100%;
+background: rgba(252,46,90,0.5);
+position: absolute;
+z-index: 99999;
+opacity:0;
+}

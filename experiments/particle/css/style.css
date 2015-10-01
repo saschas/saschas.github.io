@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: -webkit-radial-gradient(#aaaaaa 0%, #eeeeee 50%);
+  background: radial-gradient(#aaaaaa 0%, #eeeeee 50%);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.CodeMirror {
+  padding: 1em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.cm-s-monokai span.cm-string {
+  color: #74A8E6;
+}
+
+.cm-s-monokai span.cm-comment {
+  color: #ACACAC;
+}
+
+.cm-s-monokai .CodeMirror-gutters, .cm-s-monokai.CodeMirror {
+  background: transparent;
+}
+
+.cm-s-monokai span.cm-variable {
+  color: #D16A2D;
+}
+
+.cm-s-monokai span.cm-property, .cm-s-monokai span.cm-attribute {
+  color: #6A9BB8;
+}
+
+.cm-s-monokai span.cm-operator {
+  color: #828282;
+}
+
+span {
+  color: #333;
+}
+
+.cm-s-monokai span.cm-number {
+  color: #7DB081;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>threejs shadermaterial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="container"></div>
+<script type="x-shader/x-vertex" id="vertexshader">
+
+precision highp float;
+varying vec3 fNormal;
+varying vec3 fPosition;
+
+void main()
+{
+  fNormal = normalize(normalMatrix * normal);
+  vec4 pos = modelViewMatrix * vec4(position, 1.0);
+  fPosition = pos.xyz;
+  gl_Position = projectionMatrix * pos;
+}
+
+
+</script>
+<script   type="x-shader/x-fragment" id="fragmentshader">
+	precision highp float;
+
+	uniform vec3 rim_color;
+	uniform vec3 main_color;
+
+	// Options
+	uniform float start;
+	uniform float end;
+
+	uniform float time;
+	uniform vec2 resolution;
+
+	varying vec3 fPosition;
+	varying vec3 fNormal;
+
+
+	vec3 rim(vec3 color, float start, float end, float coef){
+	  vec3 normal = normalize(fNormal);
+	  vec3 eye = normalize(-fPosition.xyz);
+	  float rim = smoothstep(start, end, 1.0 - dot(normal, eye));
+	  return clamp(rim, 0.0, 1.0) * coef * color;
+	}
+
+
+void main(){
+  
+  vec3 color = main_color;
+  vec3 rimmer = rim(rim_color,start,end,5.0);
+
+  if(rimmer.x > 0.2){
+  	color = main_color;
+  }
+  else{
+  	color = rim_color;
+  }
+  
+  vec3 new_color = color;
+  
+  gl_FragColor = vec4(new_color, 1.0);
+ 
+}
+  
+</script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+<script src='http://paprcraft.com/js/orbit_controls.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

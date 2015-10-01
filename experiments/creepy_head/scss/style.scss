@@ -1,0 +1,23 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body{
+	min-width: 100%;
+  	min-height: 100%;
+  	background-color: #222;
+  	font-family: 'Lato', sans-serif;
+}
+
+body{
+	font-size:80%;
+	font-weight:lighter;
+  cursor:move;
+	//cursor:none;
+}
+body{
+	background: radial-gradient(#333 40%,#000 100%);
+	overflow:hidden;
+}

@@ -1949,6 +1949,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/transparent_video\/js\/min\/index-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/transparent_video\/js\/min\/index-min.js",
+		"outputAbbreviatedPath": "\/experiments\/transparent_video\/js\/min\/min\/index-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/transparent_video\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

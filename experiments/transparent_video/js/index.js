@@ -5,6 +5,7 @@
 
     var renderer;
     var floor;
+    var pointLight;
 
     function randNum(min, max, bool) {
 
@@ -99,9 +100,9 @@
         container = document.getElementById('container');
 
         camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, .1, 10000);
-        camera.position.x = -400;
-        camera.position.y = 40;
-        camera.position.z = -1000;
+        camera.position.x = -650;
+        camera.position.y = 35;
+        camera.position.z = -1600;
         camera.move_direction = 1;
         scene = new THREE.Scene();
         scene.fog = new THREE.FogExp2(0x000000, 0.0005);
@@ -122,8 +123,9 @@
 
         scene.add(ambient);
 
-        var pointLight = new THREE.SpotLight(0xeeeeee, 1);
+        pointLight = new THREE.SpotLight(0xeeeeee, 2);
         pointLight.position.set(0, 0, -1000);
+        pointLight.exponent = 20;
 
         pointLight.castShadow = true;
 

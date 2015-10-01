@@ -175,6 +175,11 @@ nav {
   .info p, .info a {
     color: #000; }
 
+#share {
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+
 .info-inner {
   max-width: 800px;
   margin: auto; }

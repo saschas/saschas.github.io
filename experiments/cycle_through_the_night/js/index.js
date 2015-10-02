@@ -51,7 +51,7 @@ var texture_lamp = document.getElementById('texture_lamp');
 
 var å = {
   audio: {
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/Blear_Moon_-_08_-_Piano_miniature_003.mp3"
+    src: "Blear_Moon_-_08_-_Piano_miniature_003.mp3"
   },
   gravity: 0.981,
   ready: {
@@ -63,8 +63,8 @@ var å = {
     z: 0.5
   },
   models: {
-    man: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/stylised.json",
-    lamp: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/lamp.json",
+    man: "model/stylised.json",
+    lamp: "model/lamp.json",
   },
   texture:  { },
   targetList: []

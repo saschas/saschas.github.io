@@ -133,7 +133,7 @@ h1 {
   color: #FF9B19; }
 
 h2 {
-  color: #27738F;
+  color: #555B5D;
   font-size: 1.6em;
   font-weight: 100; }
 
@@ -174,7 +174,7 @@ nav {
 
 .info {
   padding: 2em;
-  background-color: #27738F; }
+  background-color: #555B5D; }
   .info p, .info a {
     color: #FFF7D7; }
 
@@ -258,7 +258,6 @@ footer {
 
   .info {
     padding: 2em;
-    background-color: #27738F;
     min-height: 80%;
     margin-bottom: 3em; }
 

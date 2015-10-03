@@ -15,6 +15,9 @@ body {
 .filter .thumb {
   display: none; }
 
+.filter.mask .thumb.mask {
+  display: block; }
+
 .filter.thumb .thumb.thumb {
   display: block; }
 

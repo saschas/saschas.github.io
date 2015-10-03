@@ -35,7 +35,7 @@ body{
 
 
 
-$tags: "thumb", "blender", "threejs", "skeletal", "threeD", "material", "particles", "follow_camera", "line", "extrude_geometry", "live_input", "video", "morph", "particle", "pointCloud", "collision_detection", "merged_geometry", "click_event", "timing", "explosion", "text_in_space", "gravity", "terrain", "audioBuffer", "audio", "canvas", "oscillator", "twoD", "playground", "tweenjs", "game";
+$tags: "mask","thumb", "blender", "threejs", "skeletal", "threeD", "material", "particles", "follow_camera", "line", "extrude_geometry", "live_input", "video", "morph", "particle", "pointCloud", "collision_detection", "merged_geometry", "click_event", "timing", "explosion", "text_in_space", "gravity", "terrain", "audioBuffer", "audio", "canvas", "oscillator", "twoD", "playground", "tweenjs", "game";
 
 @each $tag in $tags{
     .filter.#{$tag} .thumb.#{$tag} {
@@ -46,7 +46,6 @@ $tags: "thumb", "blender", "threejs", "skeletal", "threeD", "material", "particl
 .filter.all .thumb {
   display: block;
 }
-
 
 //____________________________
 

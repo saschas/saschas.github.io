@@ -28,7 +28,6 @@ $(document).ready(function(){
         });
 
         tags = tags.sort();
-        console.log(tags);
         $.each(tags,function(index,c){
             var $span = $('<span>');
           
@@ -117,68 +116,3 @@ window.onresize = function(){
    });
 }
 
-function init() {
-    //_______________________________________camera
-    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.set(0, 100, 0);
-    
-    //_______________________________________controls
-    controls = new THREE.OrbitControls(camera);
-    controls.rotateSpeed = 1.0;
-    controls.zoomSpeed = 1.2;
-    controls.panSpeed = 0.8;
-    
-    //_______________________________________Scene
-    scene = new THREE.Scene();
-    
-    //TorusGeometry
-    torus = new THREE.Mesh(new THREE.TorusGeometry(120, 60, 40, 40),
-                           new THREE.MeshNormalMaterial());
-    torus.position.set(0, 0, 0);
-    scene.add(torus);
-    
-    //HemisphereLight
-    light = new THREE.HemisphereLight(0xffbf67, 0x15c6ff);
-    scene.add(light);
-    
-    //WebGL Renderer
-    renderer = new THREE.WebGLRenderer({ antialias: true,transparent:true });
-    //renderer.setClearColor(0xffffff, 1)
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.domElement.style.zIndex = 5;
-    document.body.appendChild(renderer.domElement);
-    
-    //CSS3D Scene
-    scene2 = new THREE.Scene();
-
-    var $thumbs = $('.experiments');
-
-    console.log($thumbs.length);
-    var dom_elements = [];
-
-    $.each($thumbs,function(index,el){
-        dom_elements[index] = new THREE.CSS3DObject($(this).get(0));
-        dom_elements[index].position.x = 0;
-        dom_elements[index].position.y = 0;
-        dom_elements[index].position.z = index;
-       // dom_elements[index].rotation.x = 90 * Math.PI / 180;
-        //dom_elements[index].rotation.y = Math.PI;
-        scene2.add(dom_elements[index]);
-    });
-    
-    
-    
-    //CSS3D Renderer
-    renderer2 = new THREE.CSS3DRenderer();
-    renderer2.setSize(window.innerWidth, window.innerHeight);
-    renderer2.domElement.style.position = 'absolute';
-    renderer2.domElement.style.top = 0;
-    document.body.appendChild(renderer2.domElement);
-}
-
-function animate() {
-    requestAnimationFrame(animate);
-    renderer2.render(scene2, camera);
-    renderer.render(scene, camera);
-    //controls.update();
-}

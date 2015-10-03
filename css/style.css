@@ -137,6 +137,10 @@ h2 {
   font-size: 1.6em;
   font-weight: 100; }
 
+.info a {
+  font-weight: bold;
+  text-decoration: none; }
+
 iframe#view_experiment {
   position: absolute;
   top: 0;
@@ -251,6 +255,10 @@ footer {
   text-align: center; }
 
 @media screen and (max-width: 700px) {
+  #share {
+    top: 1em;
+    right: 1em; }
+
   .wrapper {
     position: absolute;
     width: 100%;
@@ -258,11 +266,16 @@ footer {
 
   .info {
     padding: 2em;
-    min-height: 80%;
+    min-height: 90%;
     margin-bottom: 3em; }
 
+  .info-inner {
+    padding-top: 4em;
+    padding-bottom: 4em; }
+
   .info p {
-    font-size: 1.4em; }
+    font-size: 1.45em;
+    line-height: 1.6em; }
 
   .experiments {
     padding: 1em; }

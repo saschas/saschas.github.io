@@ -1975,6 +1975,26 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/experiments\/traffic\/assets\/css\/traffic.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/css\/traffic.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/traffic\/assets\/js\/traffic.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/js\/traffic.js",
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/js\/min\/traffic-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/traffic\/assets\/model\/cabrio.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -2007,28 +2027,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/experiments\/traffic\/assets\/model\/drill.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/experiments\/traffic\/assets\/model\/drill_inner.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill_inner.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill_inner-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
 		},
 	"\/experiments\/traffic\/assets\/model\/GRID.png": {
 		"fileType": 32768,
@@ -2096,11 +2094,27 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/experiments\/traffic\/traffic.html": {
+	"\/experiments\/traffic\/assets\/scss\/traffic.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/scss\/traffic.scss",
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/css\/traffic.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/traffic\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/experiments\/traffic\/traffic.html",
+		"inputAbbreviatedPath": "\/experiments\/traffic\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2883,6 +2897,17 @@
 		"initialSize": 10703,
 		"inputAbbreviatedPath": "\/thumb\/040_thumb.jpg",
 		"outputAbbreviatedPath": "\/thumb\/040_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/thumb\/041_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13101,
+		"inputAbbreviatedPath": "\/thumb\/041_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/041_thumb.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

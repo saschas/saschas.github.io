@@ -567,6 +567,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/cycle_through_the_night\/model\/lamp.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/model\/lamp.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/model\/lamp-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/cycle_through_the_night\/model\/stylised.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/model\/stylised.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/model\/stylised-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/experiments\/cycle_through_the_night\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -582,6 +604,39 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/experiments\/cycle_through_the_night\/textures\/lamp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6128,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/lamp.png",
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/lamp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/cycle_through_the_night\/textures\/man_texture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 174323,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/man_texture.jpg",
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/man_texture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/cycle_through_the_night\/textures\/moon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95216,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/moon.jpg",
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/textures\/moon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/experiments\/exploding_sheep\/css\/style.css": {
 		"fileType": 16,
@@ -1919,6 +1974,136 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/experiments\/traffic\/assets\/model\/cabrio.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/cabrio.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/cabrio-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/car.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/car.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/car-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/car_paint.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204515,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/car_paint.png",
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/car_paint.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/traffic\/assets\/model\/drill.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/drill_inner.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill_inner.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/drill_inner-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/GRID.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40135,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/GRID.png",
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/GRID.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/traffic\/assets\/model\/limousine.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/limousine.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/limousine-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/normal.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/normal.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/normal-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/pickup.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/pickup.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/pickup-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/truck.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/truck.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/truck-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/assets\/model\/wohnmobil.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/wohnmobil.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/traffic\/assets\/model\/wohnmobil-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/traffic\/traffic.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/traffic\/traffic.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/experiments\/transparent_video\/css\/style.css": {
 		"fileType": 16,

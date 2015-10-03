@@ -181,6 +181,9 @@ nav {
   background-color: #555B5D; }
   .info p, .info a {
     color: #FFF7D7; }
+  .info p {
+    font-size: 1.4em;
+    line-height: 1.4em; }
 
 #share {
   position: absolute;

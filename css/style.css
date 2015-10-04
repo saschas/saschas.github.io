@@ -134,8 +134,9 @@ h1 {
 
 h2 {
   color: #555B5D;
-  font-size: 1.6em;
-  font-weight: 100; }
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.1em; }
 
 .info a {
   font-weight: bold;
@@ -234,7 +235,8 @@ article:after {
             filter: grayscale(0) invert(0); }
 
 .thumb img {
-  width: 200px;
+  max-width: 300px;
+  width: 40%;
   height: auto;
   display: block;
   float: left;
@@ -283,10 +285,16 @@ footer {
   .experiments {
     padding: 1em; }
 
-  .own_tags {
-    display: none; }
+  .thumb {
+    display: block;
+    float: left;
+    padding: 0;
+    padding-bottom: 1em;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0 0; }
 
-  .thumb img {
-    width: 40%; } }
+  .own_tags {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

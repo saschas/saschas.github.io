@@ -73,8 +73,9 @@ h1 {
 
 h2 {
   color: $headline-color;
-  font-size: 1.6em;
-  font-weight:100;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.1em;
 }
 
 .info a{
@@ -213,7 +214,8 @@ article:after{
 }
 
 .thumb img{
-  width: 200px;
+  max-width: 300px;
+  width:40%;
   height: auto;
   display: block;
   float: left;
@@ -274,13 +276,19 @@ footer {
     padding:1em;
   }
 
+  .thumb{
+    display: block;
+    float: left;
+    padding:0;
+    padding-bottom: 1em;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0 0;
+  }
+
  
 
   .own_tags{
     display:none;
-  }
-
-  .thumb img{
-    width: 40%;
   }
 }

@@ -195,19 +195,58 @@ nav {
   max-width: 800px;
   margin: auto; }
 
-.tags span {
-  padding: .25em 1em;
+section.experiments-tags {
+  position: relative;
+  background-color: #3D4142;
+  cursor: pointer;
+  min-height: 140px; }
+
+article.tags {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 2em 0; }
+
+.experiments-tags .tags:after {
+  content: '#';
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  background-color: #3d4142;
+  color: #FF9B19;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  top: -50px;
+  right: 0; }
+
+.tags.tags-complete button {
+  opacity: 1; }
+
+.tags span, .tags button {
+  padding: .5em 1em;
   cursor: pointer;
   display: inline-block;
   margin: 2px;
-  background-color: #eee; }
-  .tags span:hover {
-    background-color: #F1CF8B; }
-  .tags span:active {
+  background-color: #313435;
+  color: #aaa;
+  border: none;
+  opacity: 0; }
+  .tags span:before, .tags button:before {
+    content: '#'; }
+  .tags span:hover, .tags button:hover {
+    background-color: #F1CF8B;
+    color: #222; }
+  .tags span:active, .tags button:active {
     background-color: #71ABD8; }
-  .tags span.active {
+  .tags span.active, .tags button.active {
     background-color: #4D79B5;
     color: #eee; }
+
+.touchevents button {
+  padding: .75em; }
 
 .own_tags span {
   padding: 5px;
@@ -240,9 +279,7 @@ article:after {
   height: auto;
   display: block;
   float: left;
-  margin-right: 1em;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s; }
+  margin-right: 1em; }
 
 .experiments {
   max-width: 800px;
@@ -271,8 +308,7 @@ footer {
 
   .info {
     padding: 2em;
-    min-height: 90%;
-    margin-bottom: 3em; }
+    min-height: 90%; }
 
   .info-inner {
     padding-top: 4em;
@@ -284,6 +320,9 @@ footer {
 
   .experiments {
     padding: 1em; }
+
+  section.experiments-tags {
+    min-height: initial; }
 
   .thumb {
     display: block;

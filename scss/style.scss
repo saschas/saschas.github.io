@@ -154,16 +154,62 @@ nav {
   margin:auto;
 }
 //____________________________
+section.experiments-tags {
+  position: relative;
+  background-color: #3D4142;
+  cursor:pointer;
+  min-height: 140px;
+}
 
-.tags span{
-  padding:.25em 1em;
+
+
+article.tags {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 2em 0;
+  
+}
+
+.experiments-tags .tags{
+  &:after {
+    content: '#';
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    background-color: hsla(195,4%,25%,1);
+    color: #FF9B19;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    top: -50px;
+    right: 0;
+  }
+}
+
+.tags.tags-complete button{
+  opacity:1;
+}
+
+.tags span,.tags button{
+  padding:.5em 1em;
   cursor:pointer;
   display:inline-block;
   margin:2px;
-  background-color : #eee;
+  background-color: #313435;
+  color: #aaa;
+  border:none;
+  opacity:0;
+  //transition-duration:.5s;
+  &:before{
+    content:'#';
+  }
 
   &:hover{
     background-color : $hover_color;
+    color:#222;
   }
   &:active{
     background-color : $active_color;
@@ -173,6 +219,11 @@ nav {
     background-color : $secondary_color;
     color: #eee;
   }
+}
+
+
+.touchevents button{
+  padding:.75em;
 }
 
 //____________________________ own tags
@@ -221,7 +272,7 @@ article:after{
   float: left;
   margin-right: 1em;
  // filter: grayscale(1);
-  transition-duration:.25s;
+  //transition-duration:.25s;
   //filter: grayscale(1) invert(1);
  
 }
@@ -261,7 +312,6 @@ footer {
   .info{
     padding: 2em;
     min-height: 90%;
-    margin-bottom: 3em;
   }
   .info-inner{
      padding-top: 4em;
@@ -274,6 +324,9 @@ footer {
 
   .experiments{
     padding:1em;
+  }
+  section.experiments-tags{
+    min-height:initial;
   }
 
   .thumb{

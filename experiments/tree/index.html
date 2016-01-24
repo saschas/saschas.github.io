@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tree</title>
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div id="textures">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_butterfly_left.png" class="texture" id="schaukel_butterfly_left">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_butterfly_right.png" class="texture" id="schaukel_butterfly_right">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_clouds.png" class="texture" id="schaukel_clouds">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_gras.jpg" class="texture" id="schaukel_gras">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_man.jpg" class="texture" id="schaukel_man">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_stones.jpg" class="texture" id="schaukel_stones">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_sun.png" class="texture" id="schaukel_sun">
+<img  crossOrigin="anonymous" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/schaukel_tree.jpg" class="texture" id="schaukel_tree">
+</div>
+
+<script type="application/x-glsl" id="outline-vertex">
+	varying vec2 vUv;
+
+void main() {
+	vUv = vec2( uv.x, uv.y ) ;
+	gl_Position = projectionMatrix * modelViewMatrix * vec4( position , 1.0 );
+
+}
+</script>
+
+<script type="application/x-glsl" id="outline-frag">
+	
+uniform sampler2D tDiffuse;
+uniform sampler2D tDepth;
+uniform float uScreenWidth;
+uniform float uScreenHeight;
+
+
+
+
+varying vec2 vUv;
+
+// RGBA depth
+uniform float timer;
+
+const float permTexUnit = 1.0/512.0;		// Perm texture texel-size
+const float permTexUnitHalf = 1.0/512.0;	// Half perm texture texel-size
+
+uniform float seed;
+
+float width = uScreenWidth;
+float height = uScreenHeight;
+
+float lumamount = .5; //
+    
+//a random texture generator, but you can also use a pre-computed perturbation texture
+
+
+float rand(vec2 co) {
+  return fract(sin(dot(co.xy, vec2(514.4914 + seed, 200.4914 - seed)) + seed) * 43758.5453 + timer);
+}
+
+float unpackDepth( const in vec4 rgba_depth ) {
+
+	const vec4 bit_shift = vec4( 1.0 / ( 256.0 * 256.0 * 256.0 ), 1.0 / ( 256.0 * 256.0 ), 1.0 / 256.0, 1.0 );
+	float depth = dot( rgba_depth, bit_shift );
+	return depth;
+
+}
+
+float lum(vec4 c) {
+  return dot(c.xyz, vec3(0.1, .1, 0.11));
+}
+
+void main() {
+
+	float noise = rand(vUv) * .07;
+	float depth = 1.0 - unpackDepth( texture2D( tDepth, vUv ) );
+	float xstep = 0.25/uScreenWidth;
+	float ystep = 0.25/uScreenHeight;
+	vec2 imageCoord = vUv;
+
+	float t00 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep * -1.0, ystep * -1.0)));
+	float t10 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  0.0, ystep * -1.0)));
+	float t20 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  1.0, ystep * -1.0)));
+	float t01 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep * -1.0, ystep *  0.0)));
+	float t21 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  1.0, ystep *  0.0)));
+	float t02 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep * -1.0, ystep *  1.0)));
+	float t12 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  0.0, ystep *  1.0)));
+	float t22 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  1.0, ystep *  1.0)));
+	
+	vec2 grad;
+	float scale = 1500.0;
+
+		grad.x = t00 + scale * t01 + t02 - t20 - scale * t21 - t22;
+		grad.y = t00 + scale * t10 + t20 - t02 - scale * t12 - t22;
+
+	float len = length(grad);
+	vec4 colorB = vec4(1.0,1.0,1.0,1.0) * len * 2.0;
+	
+	
+	if(colorB.r >= 0.0 && colorB.r <= 0.01) {
+		// transparent
+		colorB = vec4(0.0,0.0,0.0,0.0);
+	}
+
+	vec4 outCol = texture2D( tDiffuse, vUv ) - colorB;
+
+	if(colorB.r == 0.0 && 
+		colorB.g == 0.0 && 
+		colorB.b == 0.0 && 
+		colorB.a == 0.0 ){
+			vec4 checkColor = texture2D( tDiffuse, vUv );
+			if(checkColor.r > .1){
+				gl_FragColor = checkColor + noise + depth * 10.0;
+			}
+	}
+	
+	else{
+		gl_FragColor =texture2D( tDiffuse, vUv ) + noise * noise;
+	}
+    
+}
+</script>
+
+	<script type="text/javascript" src="assets/js/min/three.min.js"></script>
+	<script type="text/javascript" src="assets/js/min/orbit_controls.min.js"></script>
+
+
+	<script type="text/javascript" src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/ShaderPass.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/shaders/CopyShader.js"></script>
+	<!--script src="http://mrdoob.github.com/three.js/examples/js/shaders/FXAAShader.js"></script-->
+
+	
+
+
+
+	<script type="text/javascript" src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/EffectComposer.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/RenderPass.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/postprocessing/MaskPass.js"></script>
+	<script type="text/javascript" src="assets/js/min/main_script.min.js"></script>
+	
+</body>
+</html>

@@ -45,9 +45,6 @@ uniform sampler2D tDepth;
 uniform float uScreenWidth;
 uniform float uScreenHeight;
 
-
-
-
 varying vec2 vUv;
 
 // RGBA depth
@@ -86,8 +83,8 @@ void main() {
 
 	float noise = rand(vUv) * .07;
 	float depth = 1.0 - unpackDepth( texture2D( tDepth, vUv ) );
-	float xstep = 0.25/uScreenWidth;
-	float ystep = 0.25/uScreenHeight;
+	float xstep = 1.0/uScreenWidth;
+	float ystep = 1.0/uScreenHeight;
 	vec2 imageCoord = vUv;
 
 	float t00 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep * -1.0, ystep * -1.0)));
@@ -99,35 +96,26 @@ void main() {
 	float t12 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  0.0, ystep *  1.0)));
 	float t22 = unpackDepth(texture2D(tDiffuse, imageCoord + vec2(xstep *  1.0, ystep *  1.0)));
 	
+
 	vec2 grad;
-	float scale = 1500.0;
+
+	float scale = 1000.0;
 
 		grad.x = t00 + scale * t01 + t02 - t20 - scale * t21 - t22;
 		grad.y = t00 + scale * t10 + t20 - t02 - scale * t12 - t22;
 
 	float len = length(grad);
-	vec4 colorB = vec4(1.0,1.0,1.0,1.0) * len * 2.0;
-	
-	
-	if(colorB.r >= 0.0 && colorB.r <= 0.01) {
-		// transparent
-		colorB = vec4(0.0,0.0,0.0,0.0);
-	}
+	vec4 colorB = vec4(0.0,0.0,0.0,1.0) * len * 100.0;
 
-	vec4 outCol = texture2D( tDiffuse, vUv ) - colorB;
-
-	if(colorB.r == 0.0 && 
-		colorB.g == 0.0 && 
-		colorB.b == 0.0 && 
-		colorB.a == 0.0 ){
-			vec4 checkColor = texture2D( tDiffuse, vUv );
-			if(checkColor.r > .1){
-				gl_FragColor = checkColor + noise + depth * 10.0;
-			}
-	}
+	vec4 nColors = mix(colorB, texture2D( tDiffuse, vUv )  ,len * - 1.0 );
 	
+	vec4 diffColor = texture2D( tDiffuse, vUv ) + nColors;
+
+	if(diffColor.r == 0.0 && diffColor.g == 0.0 && diffColor.b == 0.0 ){
+		gl_FragColor = nColors;
+	}
 	else{
-		gl_FragColor =texture2D( tDiffuse, vUv ) + noise * noise;
+		gl_FragColor = texture2D( tDiffuse, vUv ) + nColors;
 	}
     
 }

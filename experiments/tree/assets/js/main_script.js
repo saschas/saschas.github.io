@@ -84,7 +84,7 @@ sunScene.add(sunCamera);
     //   Renderer
 //////////////////////////////////////////
 
-var renderer = new THREE.WebGLRenderer({ alpha: true, antialias:true });
+var renderer = new THREE.WebGLRenderer({ alpha: true, antialias:true,transparent:true });
 var sunRenderer = new THREE.WebGLRenderer({ alpha: true, antialias:true });
     renderer.setSize( canvas_width, canvas_height );
     sunRenderer.setSize( canvas_width, canvas_height );
@@ -104,11 +104,11 @@ var composer = new THREE.EffectComposer(renderer);
     composer.addPass(new THREE.RenderPass(scene, camera));
 
 // depth        
-var depthShader = THREE.ShaderLib[ "depthRGBA" ];
-var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
-
-var depthMaterial = new THREE.ShaderMaterial;
-var depthTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
+//var depthShader = THREE.ShaderLib[ "depthRGBA" ];
+//var depthUniforms = THREE.UniformsUtils.clone( depthShader.uniforms );
+//
+//var depthMaterial = new THREE.ShaderMaterial;
+//var depthTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
 
 composer.setSize(window.innerWidth, window.innerHeight);
 
@@ -403,9 +403,7 @@ tex_loader.load(opt.urls.tex.sun,function(texture){
   opt.mod.sun = new THREE.Mesh(plane,new THREE.MeshBasicMaterial({
     map :texture,
     color : new THREE.Color(0xffffff),
-    blending : THREE.AdditiveAlphaBlending,
     transparent : true,
-    sizeAttenuation : true,
     transparent:true,
     depthTest: true,
     depthWrite: true,
@@ -430,11 +428,10 @@ tex_loader.load(opt.urls.tex.clouds,function(texture){
     var cMaterial = new THREE.PointsMaterial({
           color : new THREE.Color(0xffffff),
           size: 150,
-          sizeAttenuation : true,
+          
           transparent:true,
           depthTest: true,
           depthWrite: true,
-          blending : THREE.AdditiveAlphaBlending,
           alphaTest: .8,
           map : texture,
           fog : false

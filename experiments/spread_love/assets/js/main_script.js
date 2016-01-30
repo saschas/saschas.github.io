@@ -1,9 +1,12 @@
+(function(argument) {
+
 var urls = {
   gras : 'assets/json/gras.json',
   hearts : 'assets/json/heart.json',
   flower : 'assets/json/flower.json',
   flowerTexture : 'assets/textures/flower.png'
 }
+
 
 var send = true;
 function getCssValuePrefix(){
@@ -155,7 +158,7 @@ var colorBGChanger = document.getElementById('colorBGRange');
 
 var name_from = document.getElementById('name_from');
 var name_to = document.getElementById('name_to');
-var send = document.getElementById('send');
+var sender = document.getElementById('send');
 
 // Receive Message
 var toName = document.getElementById('toName');
@@ -601,7 +604,7 @@ card.addEventListener('mouseleave',function(){
 
 // GENERATE URL PARAMS
 var sharerlink = document.getElementById('sharerlink');
-send.addEventListener('click',function(event){
+sender.addEventListener('click',function(event){
 event.preventDefault(event);
   var fromName = name_from.value;
   var toName = name_to.value;
@@ -611,7 +614,7 @@ event.preventDefault(event);
   if(evaluateInput(fromName) && evaluateInput(toName)){
     document.body.classList.remove('error');
     var shareURL = window.location + '?&fromName=' + encoder(fromName) + '&toName='+ encoder(toName) + '&flowerColor=' + encoder(flowerColor) + '&bgColor=' + encoder(bgColor);
-    send.setAttribute('aria-label',shareURL);
+    sender.setAttribute('aria-label',shareURL);
 
     new Clipboard('#send', {
       text: function(trigger) {
@@ -631,5 +634,4 @@ event.preventDefault(event);
 
 
 
-//}()); //__eof
-
+}());

@@ -42,7 +42,13 @@ body{
 }
 
 
-
+#sharerlink{
+  p {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
 .copied,.errorMessage {
     margin-top: 10px;
     font-size: 80%;

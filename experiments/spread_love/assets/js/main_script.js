@@ -4,7 +4,28 @@ var urls = {
   flower : 'assets/json/flower.json',
   flowerTexture : 'assets/textures/flower.png'
 }
+function getCssValuePrefix(){
+    var rtrnVal = '';//default to standard syntax
+    var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
 
+    // Create a temporary DOM object for testing
+    var dom = document.createElement('div');
+
+    for (var i = 0; i < prefixes.length; i++){
+        // Attempt to set the style
+        dom.style.background = prefixes[i] + 'radial-gradient(#000000, #ffffff)';
+
+        // Detect if the style was successfully set
+        if (dom.style.background){
+            rtrnVal = prefixes[i];
+        }
+    }
+
+    dom = null;
+    delete dom;
+
+    return rtrnVal;
+}
 /*
   Helper Functions
 */
@@ -87,6 +108,11 @@ function colorUpdate(jscolor) {
     }
 }
 
+function colorBGUpdate(jscolor) {
+  bgColor = jscolor;
+  document.body.style.backgroundImage = getCssValuePrefix() + 'radial-gradient(#' + jscolor + ' 0%,#222 100%)';
+}
+
 /*************************************************
   
 */
@@ -97,7 +123,7 @@ function colorUpdate(jscolor) {
 	Basic Setup
 */
 //(function(){
-var flowerColor,floweranimation;
+var flowerColor,floweranimation,bgColor;
 var hearts;
 var clock = new THREE.Clock();
 var time = 0;
@@ -120,6 +146,7 @@ var canvas_width = window.innerWidth;
 var flower;
 var card = document.getElementById('greeting_send');
 var colorChanger = document.getElementById('colorRange');
+var colorBGChanger = document.getElementById('colorBGRange');
 
 
 //_________________________ Send Card
@@ -168,6 +195,8 @@ if ('fromName' in urlParam && 'toName' in urlParam && 'flowerColor' in urlParam)
 
   title[0].innerHTML = 'A flower for '+ urlParam.fromName +' from ' + urlParam.toName; 
   send_own_message.setAttribute('href',long_url[0]);
+
+  colorBGUpdate(urlParam.bgColor);
 }
 else{
 
@@ -182,7 +211,11 @@ else{
 
 colorChanger.addEventListener('change',function(){
   colorUpdate(this.jscolor);
-})
+});
+
+colorBGChanger.addEventListener('change',function(){
+  colorBGUpdate(this.jscolor);
+});
 
 
 
@@ -556,7 +589,7 @@ card.addEventListener('mouseleave',function(){
 
 
 // GENERATE URL PARAMS
-
+var sharerlink = document.getElementById('sharerlink');
 send.addEventListener('click',function(event){
 event.preventDefault(event);
   var fromName = name_from.value;
@@ -566,7 +599,7 @@ event.preventDefault(event);
 
   if(evaluateInput(fromName) && evaluateInput(toName)){
     document.body.classList.remove('error');
-    var shareURL = window.location + '?&fromName=' + encoder(fromName) + '&toName='+ encoder(toName) + '&flowerColor=' + encoder(flowerColor);
+    var shareURL = window.location + '?&fromName=' + encoder(fromName) + '&toName='+ encoder(toName) + '&flowerColor=' + encoder(flowerColor) + '&bgColor=' + encoder(bgColor);
     send.setAttribute('aria-label',shareURL);
 
     new Clipboard('#send', {
@@ -575,6 +608,8 @@ event.preventDefault(event);
           return trigger.getAttribute('aria-label');
       }
     });
+
+    sharerlink.innerHTML = '<p>' +shareURL;
   
   }
 

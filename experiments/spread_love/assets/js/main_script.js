@@ -561,13 +561,20 @@ send.addEventListener('click',function(event){
 event.preventDefault(event);
   var fromName = name_from.value;
   var toName = name_to.value;
-  
+
+
 
   if(evaluateInput(fromName) && evaluateInput(toName)){
-
+    document.body.classList.remove('error');
     var shareURL = window.location + '?&fromName=' + encoder(fromName) + '&toName='+ encoder(toName) + '&flowerColor=' + encoder(flowerColor);
-   
-      window.open(shareURL,'_blank');
+    send.setAttribute('aria-label',shareURL);
+
+    new Clipboard('#send', {
+      text: function(trigger) {
+          document.body.className += ' linkCopied';
+          return trigger.getAttribute('aria-label');
+      }
+    });
   
   }
 

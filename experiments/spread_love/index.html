@@ -37,7 +37,9 @@
 				<label for="colorRange">Choose your favourite color</label>
 				<input class="jscolor" id="colorRange"  value="ffffff">
 			</div>
-			<input id="send" type="submit" value="Send"/>
+			<input id="send" type="submit" value="Copy Link"/>
+			<div class="copied">Link has been copied to clipboard. </div>
+			<div class="errorMessage">Please enter names.</div>
 		</form>
 	</div>
 </div>
@@ -50,6 +52,7 @@
 		<a href="" id="send_own_message">Now it's your turn! Spread some love</a>
 	</div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
 
 <script src="dist/js/tween.min.js"></script>	
 <script src="dist/js/three.min.js"></script>	

@@ -148,7 +148,9 @@ label[for="colorRange"] {
     color: #fff;
     font-weight: 900;
 }
-
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+  background:transparent;
+}
 
 .greeting_card_send input[type="submit"]{
 	  border: 0;

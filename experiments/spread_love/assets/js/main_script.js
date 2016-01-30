@@ -538,7 +538,6 @@ document.body.addEventListener('mousemove',function(event){
   origin.x = pos.x;
   origin.y = pos.y;
   origin.z = pos.z;
-  console.log()
 });
 
 
@@ -567,9 +566,9 @@ event.preventDefault(event);
   if(evaluateInput(fromName) && evaluateInput(toName)){
 
     var shareURL = window.location + '?&fromName=' + encoder(fromName) + '&toName='+ encoder(toName) + '&flowerColor=' + encoder(flowerColor);
-    console.log(shareURL,name_from,name_to);
-
-    window.location = shareURL;
+   
+      window.open(shareURL,'_blank');
+  
   }
 
 

@@ -4,6 +4,8 @@ var urls = {
   flower : 'assets/json/flower.json',
   flowerTexture : 'assets/textures/flower.png'
 }
+
+var send = true;
 function getCssValuePrefix(){
     var rtrnVal = '';//default to standard syntax
     var prefixes = ['-o-', '-ms-', '-moz-', '-webkit-'];
@@ -197,10 +199,11 @@ if ('fromName' in urlParam && 'toName' in urlParam && 'flowerColor' in urlParam)
   send_own_message.setAttribute('href',long_url[0]);
 
   colorBGUpdate(urlParam.bgColor);
+  send = false;
 }
 else{
 
-
+  send = true;
 
   document.body.className += 'send';
   flowerColor = 'ffffff';
@@ -251,6 +254,9 @@ window.onresize = function(){
 
 //__________ controls
 
+
+
+
   controls = new THREE.OrbitControls( camera );
   controls.damping = 0.2;
   controls.target = new THREE.Vector3(0,12.5,0);
@@ -258,6 +264,11 @@ window.onresize = function(){
   controls.minPolarAngle = 50 * Math.PI/180;
   controls.minDistance = 15;
   controls.maxDistance = 30;
+
+if(window.innerWidth < 800){
+  controls.enabled = false;
+  
+}
 
 
 //__________ light

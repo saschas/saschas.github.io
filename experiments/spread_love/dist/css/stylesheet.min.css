@@ -191,4 +191,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   width: 50%;
   color: #fff;
   font-style: italic; }
+
+@media screen and (max-width: 800px) {
+  .send .greeting_card_send {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 9999; } }
 /*# sourceMappingURL=stylesheet.min.css.map */

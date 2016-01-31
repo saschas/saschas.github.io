@@ -623,6 +623,7 @@ event.preventDefault(event);
       }
     });
 
+    window.open(shareURL,'_blank');
     sharerlink.innerHTML = '<p>' +shareURL;
   
   }

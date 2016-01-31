@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: -webkit-radial-gradient(#333 40%, #000 100%);
+  background: radial-gradient(#333 40%, #000 100%); }
+/*# sourceMappingURL=stylesheet.min.css.map */

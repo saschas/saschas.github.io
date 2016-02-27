@@ -28,7 +28,7 @@ body{
 
 //____________________________
 
-.filter .thumb {
+.filter .webGL  {
   display: none;
 }
 
@@ -38,12 +38,12 @@ body{
 $tags: "mask","thumb", "blender", "threejs", "skeletal", "threeD", "material", "particles", "follow_camera", "line", "extrude_geometry", "live_input", "video", "morph", "particle", "pointCloud", "collision_detection", "merged_geometry", "click_event", "timing", "explosion", "text_in_space", "gravity", "terrain", "audioBuffer", "audio", "canvas", "oscillator", "twoD", "playground", "tweenjs", "game";
 
 @each $tag in $tags{
-    .filter.#{$tag} .thumb.#{$tag} {
+    .filter.#{$tag} .webGL .#{$tag} {
       display:block;
     }
 }
 
-.filter.all .thumb {
+.filter.all .webGL  {
   display: block;
 }
 
@@ -53,11 +53,11 @@ h1,h2,h3,h4,h5,h6,a,p{
    color :#000;
 }
 
-.thumb a{
+.webGL  a{
   text-decoration:none;
 }
 
-.thumb p {
+.webGL  p {
   font-size: 1em;
   color: #666;
 }
@@ -250,7 +250,7 @@ article:after{
 }
 
 
-.thumb{
+.webGL {
   width: 100%;
   display: block;
   float: left;
@@ -264,7 +264,7 @@ article:after{
   }
 }
 
-.thumb img{
+.webGL  img{
   max-width: 300px;
   width:40%;
   height: auto;
@@ -329,7 +329,7 @@ footer {
     min-height:initial;
   }
 
-  .thumb{
+  .webGL {
     display: block;
     float: left;
     padding:0;

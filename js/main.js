@@ -11,7 +11,7 @@ var div;
 $(document).ready(function(){
     console.log(!Modernizr.touchevents ,window.innerWidth > 700);
         var tags = function(){
-            var $thumbs = $('.thumb');
+            var $thumbs = $('.webGL');
             var $tag_holder = $('.tags');
             var tags = []
             $thumbs.each(function(index,el){
@@ -49,7 +49,7 @@ $(document).ready(function(){
                 }
 
 
-                if(c!='thumb'){
+                if(c!='webGL'){
                    $span.attr('data-tag',attr).append(c);
                     $tag_holder.append($span);
                 }
@@ -92,7 +92,7 @@ $(document).ready(function(){
    });
 
 
-   $('.thumb a').click(function(e){
+   $('.webGL a').click(function(e){
        e.preventDefault(e);
 
         $('#preview').addClass('open_iframe');

@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19033",
+"creatorBuild": "19115",
 "files": {
 	"\/css\/style.css": {
 		"fileType": 16,
@@ -727,6 +727,360 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/experiments\/flower\/assets\/css\/stylesheet.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/css\/stylesheet.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/flower\/assets\/js\/main_script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/main_script.js",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/main_script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/flower\/assets\/js\/min\/main_script.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/main_script.min.js",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/min\/main_script.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/flower\/assets\/js\/min\/orbit_controls.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/orbit_controls.min.js",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/min\/orbit_controls.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/flower\/assets\/js\/min\/three.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/three.min.js",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/js\/min\/min\/three.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/dandelion.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/dandelion.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/dandelion-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/flower_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/flower_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/flower_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/flower_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/flower_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/flower_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/gras.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/gras.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/gras-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/gras_low.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/gras_low.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/gras_low-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_1.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_1.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_1-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_3.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_3.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_3-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_4.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_4.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_4-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_6.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_6.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_6-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_7.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_7.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_7-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/plant_8.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_8.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/plant_8-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/json\/tree.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/tree.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/json\/tree-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/flower\/assets\/scss\/stylesheet.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/scss\/stylesheet.scss",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/css\/stylesheet.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/flower\/assets\/tex\/map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.38669e+06,
+		"inputAbbreviatedPath": "\/experiments\/flower\/assets\/tex\/map.png",
+		"outputAbbreviatedPath": "\/experiments\/flower\/assets\/tex\/map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/flower\/blend\/tex\/map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33586e+06,
+		"inputAbbreviatedPath": "\/experiments\/flower\/blend\/tex\/map.png",
+		"outputAbbreviatedPath": "\/experiments\/flower\/blend\/tex\/map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/flower\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/flower\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/generic_logo\/assets\/css\/diesdas.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/css\/diesdas.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/generic_logo\/assets\/model\/diesdas.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/diesdas.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/diesdas-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/generic_logo\/assets\/model\/diesdas2.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/diesdas2.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/diesdas2-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/generic_logo\/assets\/model\/digital.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/digital.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/digital-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/generic_logo\/assets\/model\/stone.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/stone.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/stone-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/generic_logo\/assets\/model\/texture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40135,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/texture.png",
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/model\/texture.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/generic_logo\/assets\/scss\/diesdas.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/scss\/diesdas.scss",
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/css\/diesdas.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/generic_logo\/assets\/texture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40135,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/texture.png",
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/texture.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/generic_logo\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/experiments\/headstand\/css\/style.css": {
 		"fileType": 16,
@@ -1751,6 +2105,304 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/experiments\/room\/assets\/js\/main_script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/assets\/js\/main_script.js",
+		"outputAbbreviatedPath": "\/experiments\/room\/assets\/js\/min\/main_script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/room\/assets\/json\/room.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/assets\/json\/room.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/room\/assets\/json\/room-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/room\/assets\/scss\/stylesheet.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/assets\/scss\/stylesheet.scss",
+		"outputAbbreviatedPath": "\/experiments\/room\/assets\/css\/stylesheet.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/room\/assets\/textures\/roomMap_ao.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.26944e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/assets\/textures\/roomMap_ao.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/assets\/textures\/roomMap_ao.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/assets\/textures\/roomMap_small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 430673,
+		"inputAbbreviatedPath": "\/experiments\/room\/assets\/textures\/roomMap_small.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/assets\/textures\/roomMap_small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/Bildschirmfoto 2016-01-31 um 16.46.00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.6812e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Bildschirmfoto 2016-01-31 um 16.46.00.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Bildschirmfoto 2016-01-31 um 16.46.00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/BookCovers0077_2_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.42113e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0077_2_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0077_2_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/BookCovers0078_2_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.51284e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0078_2_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0078_2_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/BookCovers0085_5_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.36566e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0085_5_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0085_5_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/BookCovers0159_4_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.58410e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0159_4_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/BookCovers0159_4_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/Carpet0025_1_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 910139,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Carpet0025_1_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Carpet0025_1_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/ConcreteStucco0134_1_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 785280,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/ConcreteStucco0134_1_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/ConcreteStucco0134_1_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/DecalBottom0005_1_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 580056,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/DecalBottom0005_1_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/DecalBottom0005_1_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/DecalBottom0012_1_S.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 236658,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/DecalBottom0012_1_S.png",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/DecalBottom0012_1_S.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/FabricPlain0008_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 582038,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/FabricPlain0008_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/FabricPlain0008_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/jeans.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85288,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/jeans.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/jeans.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/Leather0067_1_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.10753e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Leather0067_1_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/Leather0067_1_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/macbook.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 287394,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/macbook.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/macbook.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/paper.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.83737e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/paper.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/paper.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/roomMap_ao.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.26944e+06,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/roomMap_ao.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/roomMap_ao.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/WoodFine0050_1_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 637029,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/WoodFine0050_1_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/WoodFine0050_1_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/blend\/textures\/WoodFine0051_1_S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 578489,
+		"inputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/WoodFine0051_1_S.jpg",
+		"outputAbbreviatedPath": "\/experiments\/room\/blend\/textures\/WoodFine0051_1_S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/room\/dist\/css\/stylesheet.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/dist\/css\/stylesheet.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/room\/dist\/js\/main_script.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/dist\/js\/main_script.min.js",
+		"outputAbbreviatedPath": "\/experiments\/room\/dist\/js\/min\/main_script.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/room\/dist\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/dist\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/room\/dist\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/room\/dist\/js\/three.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/dist\/js\/three.min.js",
+		"outputAbbreviatedPath": "\/experiments\/room\/dist\/js\/min\/three.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/room\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/room\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/experiments\/sandbox\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -1913,6 +2565,172 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/experiments\/spread_love\/assets\/js\/main_script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/js\/main_script.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/js\/min\/main_script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/assets\/js\/tween.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/js\/tween.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/js\/min\/tween-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/assets\/json\/flower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/flower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/flower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/spread_love\/assets\/json\/gras.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/gras.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/gras-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/spread_love\/assets\/json\/heart.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/heart.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/json\/heart-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/spread_love\/assets\/scss\/stylesheet.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/scss\/stylesheet.scss",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/css\/stylesheet.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/spread_love\/assets\/textures\/flower.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 260514,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/textures\/flower.png",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/textures\/flower.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/spread_love\/assets\/textures\/grain.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33648,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/assets\/textures\/grain.png",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/assets\/textures\/grain.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/spread_love\/dist\/css\/stylesheet.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/css\/stylesheet.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/spread_love\/dist\/js\/jscolor.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/jscolor.min.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/min\/jscolor.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/dist\/js\/main_script.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/main_script.min.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/min\/main_script.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/dist\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/dist\/js\/three.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/three.min.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/min\/three.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/dist\/js\/tween.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/tween.min.js",
+		"outputAbbreviatedPath": "\/experiments\/spread_love\/dist\/js\/min\/tween.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/spread_love\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/spread_love\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/experiments\/store-audio-data-as-json\/css\/style.css": {
 		"fileType": 16,
@@ -2174,6 +2992,381 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/experiments\/tree\/assets\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/experiments\/tree\/assets\/js\/main_script.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/main_script.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/min\/ClearPass.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/ClearPass.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/ClearPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/min\/main_script.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script.min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/main_script.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/min\/orbit_controls.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/orbit_controls.min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/orbit_controls.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/min\/three.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/three.min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/three.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/BloomPass.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/BloomPass.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/BloomPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/EffectComposer.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/EffectComposer.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/EffectComposer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/MaskPass.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/MaskPass.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/MaskPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/min\/ShaderExtras-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderExtras-min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/min\/ShaderExtras-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/RenderPass.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/RenderPass.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/RenderPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/ShaderExtras.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/ShaderExtras.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderExtras-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/shaderLoader.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/shaderLoader.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/shaderLoader-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/ShaderPass.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/ShaderPass.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/json\/man.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/man.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/man-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/tree\/assets\/json\/schaukel.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/schaukel.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/schaukel-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/tree\/assets\/json\/stones.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/stones.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/stones-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/tree\/assets\/json\/tree.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/tree.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/json\/tree-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/experiments\/tree\/assets\/scss\/style.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/scss\/style.scss",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/css\/style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/butterfly_left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21593,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/butterfly_left.png",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/butterfly_left.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/butterfly_right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22221,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/butterfly_right.png",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/butterfly_right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/clouds.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112667,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/clouds.png",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/clouds.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/gras.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71807,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/gras.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/gras.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/man.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31947,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/man.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/man.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/schaukel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 778607,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/schaukel.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/schaukel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/stones.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117606,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/stones.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/stones.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/sun.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 279520,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/sun.png",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/sun.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/assets\/textures\/tree.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 314321,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/tree.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/textures\/tree.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/blend\/tex\/Material Diffuse Color.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20566,
+		"inputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/Material Diffuse Color.png",
+		"outputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/Material Diffuse Color.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/blend\/tex\/schaukel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17028,
+		"inputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/schaukel.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/schaukel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/blend\/tex\/stones.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117606,
+		"inputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/stones.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/stones.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/blend\/tex\/tree.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 334174,
+		"inputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/tree.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/blend\/tex\/tree.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/blend\/textures\/schaukel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17028,
+		"inputAbbreviatedPath": "\/experiments\/tree\/blend\/textures\/schaukel.jpg",
+		"outputAbbreviatedPath": "\/experiments\/tree\/blend\/textures\/schaukel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/tree\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/experiments\/tweenjs\/css\/style.css": {
 		"fileType": 16,
@@ -3198,6 +4391,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/thumb\/042_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20685,
+		"inputAbbreviatedPath": "\/thumb\/042_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/042_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/thumb\/043_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20631,
+		"inputAbbreviatedPath": "\/thumb\/043_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/043_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/thumb\/044_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69519,
+		"inputAbbreviatedPath": "\/thumb\/044_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/044_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/thumb\/045_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 81264,
+		"inputAbbreviatedPath": "\/thumb\/045_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/045_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/thumb\/046_thumb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27888,
+		"inputAbbreviatedPath": "\/thumb\/046_thumb.jpg",
+		"outputAbbreviatedPath": "\/thumb\/046_thumb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/thumb\/exp\/000_thumb.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3212,7 +4460,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Sascha Sigl",
+"lastSavedByUser": "administrator",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -3312,8 +4560,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -3322,6 +4578,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {
@@ -3701,10 +4961,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -3713,15 +4969,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"debug": {
+		"couch": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -3729,75 +4977,27 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
+		"es6": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
+		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
+		"for": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": 0,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"vars": {
+		"this": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -3898,7 +5098,9 @@
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,

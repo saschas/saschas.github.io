@@ -12,115 +12,115 @@ body {
   background: #fff;
   font-family: 'Source Sans Pro', sans-serif; }
 
-.filter .thumb {
+.filter .webGL {
   display: none; }
 
-.filter.mask .thumb.mask {
+.filter.mask .webGL .mask {
   display: block; }
 
-.filter.thumb .thumb.thumb {
+.filter.thumb .webGL .thumb {
   display: block; }
 
-.filter.blender .thumb.blender {
+.filter.blender .webGL .blender {
   display: block; }
 
-.filter.threejs .thumb.threejs {
+.filter.threejs .webGL .threejs {
   display: block; }
 
-.filter.skeletal .thumb.skeletal {
+.filter.skeletal .webGL .skeletal {
   display: block; }
 
-.filter.threeD .thumb.threeD {
+.filter.threeD .webGL .threeD {
   display: block; }
 
-.filter.material .thumb.material {
+.filter.material .webGL .material {
   display: block; }
 
-.filter.particles .thumb.particles {
+.filter.particles .webGL .particles {
   display: block; }
 
-.filter.follow_camera .thumb.follow_camera {
+.filter.follow_camera .webGL .follow_camera {
   display: block; }
 
-.filter.line .thumb.line {
+.filter.line .webGL .line {
   display: block; }
 
-.filter.extrude_geometry .thumb.extrude_geometry {
+.filter.extrude_geometry .webGL .extrude_geometry {
   display: block; }
 
-.filter.live_input .thumb.live_input {
+.filter.live_input .webGL .live_input {
   display: block; }
 
-.filter.video .thumb.video {
+.filter.video .webGL .video {
   display: block; }
 
-.filter.morph .thumb.morph {
+.filter.morph .webGL .morph {
   display: block; }
 
-.filter.particle .thumb.particle {
+.filter.particle .webGL .particle {
   display: block; }
 
-.filter.pointCloud .thumb.pointCloud {
+.filter.pointCloud .webGL .pointCloud {
   display: block; }
 
-.filter.collision_detection .thumb.collision_detection {
+.filter.collision_detection .webGL .collision_detection {
   display: block; }
 
-.filter.merged_geometry .thumb.merged_geometry {
+.filter.merged_geometry .webGL .merged_geometry {
   display: block; }
 
-.filter.click_event .thumb.click_event {
+.filter.click_event .webGL .click_event {
   display: block; }
 
-.filter.timing .thumb.timing {
+.filter.timing .webGL .timing {
   display: block; }
 
-.filter.explosion .thumb.explosion {
+.filter.explosion .webGL .explosion {
   display: block; }
 
-.filter.text_in_space .thumb.text_in_space {
+.filter.text_in_space .webGL .text_in_space {
   display: block; }
 
-.filter.gravity .thumb.gravity {
+.filter.gravity .webGL .gravity {
   display: block; }
 
-.filter.terrain .thumb.terrain {
+.filter.terrain .webGL .terrain {
   display: block; }
 
-.filter.audioBuffer .thumb.audioBuffer {
+.filter.audioBuffer .webGL .audioBuffer {
   display: block; }
 
-.filter.audio .thumb.audio {
+.filter.audio .webGL .audio {
   display: block; }
 
-.filter.canvas .thumb.canvas {
+.filter.canvas .webGL .canvas {
   display: block; }
 
-.filter.oscillator .thumb.oscillator {
+.filter.oscillator .webGL .oscillator {
   display: block; }
 
-.filter.twoD .thumb.twoD {
+.filter.twoD .webGL .twoD {
   display: block; }
 
-.filter.playground .thumb.playground {
+.filter.playground .webGL .playground {
   display: block; }
 
-.filter.tweenjs .thumb.tweenjs {
+.filter.tweenjs .webGL .tweenjs {
   display: block; }
 
-.filter.game .thumb.game {
+.filter.game .webGL .game {
   display: block; }
 
-.filter.all .thumb {
+.filter.all .webGL {
   display: block; }
 
 h1, h2, h3, h4, h5, h6, a, p {
   color: #000; }
 
-.thumb a {
+.webGL a {
   text-decoration: none; }
 
-.thumb p {
+.webGL p {
   font-size: 1em;
   color: #666; }
 
@@ -262,18 +262,18 @@ article:after {
   display: block;
   clear: both; }
 
-.thumb {
+.webGL {
   width: 100%;
   display: block;
   float: left;
   padding: 2em 0;
   position: relative;
   border-bottom: 1px solid #ccc; }
-  .thumb:hover img {
+  .webGL:hover img {
     -webkit-filter: grayscale(0) invert(0);
             filter: grayscale(0) invert(0); }
 
-.thumb img {
+.webGL img {
   max-width: 300px;
   width: 40%;
   height: auto;
@@ -324,7 +324,7 @@ footer {
   section.experiments-tags {
     min-height: initial; }
 
-  .thumb {
+  .webGL {
     display: block;
     float: left;
     padding: 0;

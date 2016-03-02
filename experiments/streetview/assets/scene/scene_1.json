@@ -1,0 +1,502 @@
+[
+    {
+        "obj": "wood_full",
+        "coor": 0,
+        "rot": 90
+    },
+    {
+        "obj": "wood_full",
+        "coor": 1,
+        "rot": 90
+    },
+    {
+        "obj": "wood_full",
+        "coor": 2,
+        "rot": 270
+    },
+    {
+        "obj": "wood_full",
+        "coor": 3,
+        "rot": 270
+    },
+    {
+        "obj": "wood_half",
+        "coor": 4,
+        "rot": -90
+    },
+    {
+        "obj": "gras",
+        "coor": 5,
+        "rot": 270
+    },
+    {
+        "obj": "gras",
+        "coor": 6,
+        "rot": 180
+    },
+    {
+        "obj": "gras",
+        "coor": 7,
+        "rot": 270
+    },
+    {
+        "obj": "gras",
+        "coor": 8,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 9,
+        "rot": 90
+    },
+    {
+        "obj": "wood_full",
+        "coor": 10,
+        "rot": 180
+    },
+    {
+        "obj": "corner",
+        "coor": 11,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 12,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 13,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 14,
+        "rot": 0
+    },
+    {
+        "obj": "single_cross",
+        "coor": 15,
+        "rot": -90
+    },
+    {
+        "obj": "street",
+        "coor": 16,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 17,
+        "rot": 0
+    },
+    {
+        "obj": "corner",
+        "coor": 18,
+        "rot": -90
+    },
+    {
+        "obj": "water_half",
+        "coor": 19,
+        "rot": 90
+    },
+    {
+        "obj": "wood_full",
+        "coor": 20,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 21,
+        "rot": 90
+    },
+    {
+        "obj": "wood_full",
+        "coor": 22,
+        "rot": 270
+    },
+    {
+        "obj": "wood_half",
+        "coor": 23,
+        "rot": -90
+    },
+    {
+        "obj": "gras",
+        "coor": 24,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 25,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 26,
+        "rot": 270
+    },
+    {
+        "obj": "gras",
+        "coor": 27,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 28,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 29,
+        "rot": 90
+    },
+    {
+        "obj": "wood_half",
+        "coor": 30,
+        "rot": -180
+    },
+    {
+        "obj": "single_cross",
+        "coor": 31,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 32,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 33,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 34,
+        "rot": 180
+    },
+    {
+        "obj": "cross",
+        "coor": 35,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 36,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 37,
+        "rot": 0
+    },
+    {
+        "obj": "single_cross",
+        "coor": 38,
+        "rot": -180
+    },
+    {
+        "obj": "water_half",
+        "coor": 39,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 40,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 41,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 42,
+        "rot": 180
+    },
+    {
+        "obj": "gras",
+        "coor": 43,
+        "rot": 180
+    },
+    {
+        "obj": "gras",
+        "coor": 44,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 45,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 46,
+        "rot": 180
+    },
+    {
+        "obj": "gras",
+        "coor": 47,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 48,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 49,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 50,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 51,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 52,
+        "rot": 180
+    },
+    {
+        "obj": "gras",
+        "coor": 53,
+        "rot": 270
+    },
+    {
+        "obj": "gras",
+        "coor": 54,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 55,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 56,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 57,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 58,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 59,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 60,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 61,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 62,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 63,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 64,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 65,
+        "rot": 90
+    },
+    {
+        "obj": "house",
+        "coor": 66,
+        "rot": 90
+    },
+    {
+        "obj": "house",
+        "coor": 67,
+        "rot": 270
+    },
+    {
+        "obj": "street",
+        "coor": 68,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 69,
+        "rot": 90
+    },
+    {
+        "obj": "gras",
+        "coor": 70,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 71,
+        "rot": 90
+    },
+    {
+        "obj": "river",
+        "coor": 72,
+        "rot": 0
+    },
+    {
+        "obj": "gras",
+        "coor": 73,
+        "rot": 0
+    },
+    {
+        "obj": "power_1",
+        "coor": 74,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 75,
+        "rot": 90
+    },
+    {
+        "obj": "house",
+        "coor": 76,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 77,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 78,
+        "rot": 90
+    },
+    {
+        "obj": "water_s",
+        "coor": 79,
+        "rot": 0
+    },
+    {
+        "obj": "gras",
+        "coor": 80,
+        "rot": 180
+    },
+    {
+        "obj": "corner",
+        "coor": 81,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 82,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 83,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 84,
+        "rot": 0
+    },
+    {
+        "obj": "single_cross",
+        "coor": 85,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 86,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 87,
+        "rot": 0
+    },
+    {
+        "obj": "corner",
+        "coor": 88,
+        "rot": 180
+    },
+    {
+        "obj": "water_quarter",
+        "coor": 89,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 90,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 91,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 92,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 93,
+        "rot": 0
+    },
+    {
+        "obj": "water_island_1",
+        "coor": 94,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 95,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 96,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 97,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 98,
+        "rot": 0
+    },
+    {
+        "obj": "water_corner",
+        "coor": 99,
+        "rot": 0
+    }
+]

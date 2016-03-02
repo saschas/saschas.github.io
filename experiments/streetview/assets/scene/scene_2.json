@@ -1,0 +1,502 @@
+[
+    {
+        "obj": "wood_full",
+        "coor": 0,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 1,
+        "rot": 90
+    },
+    {
+        "obj": "power_1",
+        "coor": 2,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 3,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 4,
+        "rot": 90
+    },
+    {
+        "obj": "water",
+        "coor": 5,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 6,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 7,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 8,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 9,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 10,
+        "rot": 180
+    },
+    {
+        "obj": "single_cross",
+        "coor": 11,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 12,
+        "rot": 0
+    },
+    {
+        "obj": "corner",
+        "coor": 13,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 14,
+        "rot": 90
+    },
+    {
+        "obj": "water",
+        "coor": 15,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 16,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 17,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 18,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 19,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 20,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 21,
+        "rot": 90
+    },
+    {
+        "obj": "water_corner_inside",
+        "coor": 22,
+        "rot": 0
+    },
+    {
+        "obj": "water_half",
+        "coor": 23,
+        "rot": 0
+    },
+    {
+        "obj": "water_small_corner",
+        "coor": 24,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 25,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 26,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 27,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 28,
+        "rot": 0
+    },
+    {
+        "obj": "water",
+        "coor": 29,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 30,
+        "rot": -180
+    },
+    {
+        "obj": "street",
+        "coor": 31,
+        "rot": 90
+    },
+    {
+        "obj": "water_corner_inside",
+        "coor": 32,
+        "rot": 90
+    },
+    {
+        "obj": "water_half",
+        "coor": 33,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 34,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 35,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 36,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 37,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 38,
+        "rot": 180
+    },
+    {
+        "obj": "water_half",
+        "coor": 39,
+        "rot": 180
+    },
+    {
+        "obj": "wood_half",
+        "coor": 40,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 41,
+        "rot": 90
+    },
+    {
+        "obj": "house_large",
+        "coor": 42,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 43,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 44,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 45,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 46,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 47,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 48,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 49,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 50,
+        "rot": 0
+    },
+    {
+        "obj": "cross",
+        "coor": 51,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 52,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 53,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 54,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 55,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 56,
+        "rot": 180
+    },
+    {
+        "obj": "street",
+        "coor": 57,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 58,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 59,
+        "rot": 0
+    },
+    {
+        "obj": "house",
+        "coor": 60,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 61,
+        "rot": 90
+    },
+    {
+        "obj": "house_large",
+        "coor": 62,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 63,
+        "rot": 0
+    },
+    {
+        "obj": "house_large",
+        "coor": 64,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 65,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 66,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 67,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 68,
+        "rot": 0
+    },
+    {
+        "obj": "gras_copy",
+        "coor": 69,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 70,
+        "rot": 0
+    },
+    {
+        "obj": "corner",
+        "coor": 71,
+        "rot": 90
+    },
+    {
+        "obj": "street",
+        "coor": 72,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 73,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 74,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 75,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 76,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 77,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 78,
+        "rot": 0
+    },
+    {
+        "obj": "street",
+        "coor": 79,
+        "rot": 180
+    },
+    {
+        "obj": "wood_full",
+        "coor": 80,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 81,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 82,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 83,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 84,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 85,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 86,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 87,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 88,
+        "rot": 0
+    },
+    {
+        "obj": "wood_half",
+        "coor": 89,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 90,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 91,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 92,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 93,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 94,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 95,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 96,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 97,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 98,
+        "rot": 0
+    },
+    {
+        "obj": "wood_full",
+        "coor": 99,
+        "rot": 0
+    }
+]

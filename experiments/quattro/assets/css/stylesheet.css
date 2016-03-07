@@ -47,7 +47,7 @@ button#next {
   right: 10px;
   margin: auto;
   border: 0;
-  z-index: 2;
+  z-index: 99;
   color: #fff;
   background-color: #28BFE4; }
 
@@ -90,8 +90,7 @@ div#ui {
   height: 100%;
   z-index: 5;
   background: black;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s; }
+  transition-duration: .25s; }
 
 .tut.inGame {
   display: none; }
@@ -118,8 +117,7 @@ div#ui {
   height: 100%;
   margin: auto;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.95);
   z-index: 9999; }
 
@@ -132,8 +130,7 @@ div#ui {
     margin: auto;
     top: 50%;
     position: relative;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     color: #eee;
     text-align: center; }
     .slide .slide-inner p {
@@ -216,4 +213,3 @@ button[data-sortmode="shape"] {
   color: #fff;
   background-color: #E2BC57;
   border: 1px solid #E2BC57; }
-/*# sourceMappingURL=stylesheet.min.css.map */

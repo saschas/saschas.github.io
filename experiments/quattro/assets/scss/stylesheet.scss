@@ -1,0 +1,297 @@
+
+*{
+	box-sizing:border-box;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+body{
+	margin:0;
+	overflow:hidden;
+  
+ 
+}
+
+body,p,li,button,a,figcapture,h1,h2,h3,h4,h5,h6,bold,strong,i{
+  font-family: 'Vampiro One', cursive;
+}
+
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.quattro-ico {
+  width: 100px;
+  margin: auto;
+}
+
+button.button {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 120%;
+
+  &.play{
+    background:#45D77B;
+  }
+}
+
+
+
+#turn {
+  color: #eee;
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,.5);
+}
+
+button#next {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px;
+  width: 100px;
+  right: 10px;
+  margin: auto;
+  border: 0;
+}
+
+
+
+
+img.ico {
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+button#startButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  background: rgba(60, 159, 60,.8);
+  color: #fff;
+  font-size: 90%;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+
+#gameHolder{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+div#ui {
+ position: relative;
+ top: 0;
+ padding: 10px;
+ z-index: 2;
+}
+
+.tut {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(0,0,0,1);
+  transition-duration: .25s;
+}
+
+
+
+
+
+
+
+.tut.inGame {
+    //background: rgba(0,0,0,0);
+    display: none;
+  }
+
+  .label {
+   
+    padding: 5px;
+    font-size: 50%;
+    color: #eee;
+    display: table;
+    position:absolute;
+    top:0;
+    left:0;
+    font-family: sans-serif;
+
+    &:hover{
+      z-index: 999;
+
+      .props{
+        display: table-cell;
+      }   
+    }   
+  }
+
+
+  .noBackground #tutGallery {
+    background: transparent;
+  }
+  #tutGallery {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.95);
+    z-index: 9999;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+
+    .slide-inner {
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+      color:#eee;
+      text-align: center;
+
+      p{
+        margin-bottom:10px;
+      }
+    }
+  }
+
+  .row {
+    width: 30%;
+    height: 50%;
+    position: relative;
+    display: inline-block;
+    margin-right: 6%;
+  }
+
+// Customizing a specific controller arrow.
+aside[id="tutGallery-control"] .slidr-control.right {
+  width: 50px!important;
+  height: 50px!important;
+  top: 50% !important;
+  margin-top: -25px !important;
+  right: 25px !important;
+  background: navajowhite;
+}
+
+aside[id="tutGallery-control"] .slidr-control.right:hover {
+  opacity: 1;
+}
+
+// Hide a single arrow within a single controller.
+aside[id="tutGallery-control"] .slidr-control.right:after {
+  border-color: transparent !important;
+}
+
+// Hide all arrows within a single controller.
+aside[id="tutGallery-control"] .slidr-control:after {
+  border-color: transparent !important;
+}
+
+// Hide all Slidr arrows.
+aside[id*="-control"] .slidr-control:after {
+  border-color: transparent !important;   
+}
+
+
+
+
+
+img.ico_stone {
+  width: 25px;
+  display: table-cell;
+  margin-right:10px;
+}
+
+.props {
+  display: table-cell;
+  display: none;
+  vertical-align: top;
+
+
+}
+.label span {
+  display: block;
+}
+
+.options {
+  display: inline-block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  max-width: 250px;
+}
+
+
+.sort {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  background: rgba(0,0,0,.5);
+  color: #eee;
+  border-radius: 10px;
+}
+
+button[data-sortmode="color"]{
+  color:#fff;
+  background-color:#E25757;
+  border: 1px solid #E25757;
+}
+
+button[data-sortmode="height"]{
+  color:#fff;
+  background-color:#61E557;
+  border: 1px solid #61E557;
+}
+
+button[data-sortmode="filled"]{
+  color:#fff;
+  background-color:#5874E5;
+  border: 1px solid #5874E5;
+}
+
+button[data-sortmode="shape"]{
+  color:#fff;
+  background-color:#E2BC57;
+  border: 1px solid #E2BC57;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

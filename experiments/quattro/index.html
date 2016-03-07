@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>basic setup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Vampiro+One' rel='stylesheet' type='text/css'>
+	<link href="dist/css/stylesheet.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="tut" id="tutorial">
+	<div id="tutGallery" style="dislay: block">
+		<div class="slide" data-slidr="1">
+  	<div class="slide-inner">
+			<img src="assets/textures/ico/quattro.png" class="quattro-ico" alt="quattro">
+			<h1>Quattro</h1>
+
+			<button class="play button" id="playDirect">Play</button>
+			<button class="button" id="showTut">How to Play</button>
+			<button class="button" >Credit</button>
+  	</div>
+	  </div>
+	  <div class="slide" data-slidr="2">
+	  	<div class="slide-inner">
+				<p>Each stone has 4 different properties.</p>
+				<img src="assets/textures/ico/legend.png" alt="quattro legende properties">
+	  	</div>
+	  </div>
+	  <div class="slide" data-slidr="3">
+	  	<div class="slide-inner">
+				<div class="row">
+						<h3>Height</h3>
+						<img src="assets/textures/ico/small_win.png" alt="small win">
+						<img src="assets/textures/ico/tall_win.png" alt="tall win">
+				</div>
+				<div class="row">
+						<h3>Color</h3>
+						<img src="assets/textures/ico/black_win.png" alt="black win">
+						<img src="assets/textures/ico/white_win.png" alt="white win">
+				</div>
+				<div class="row">
+						<h3>Filled</h3>
+						<img src="assets/textures/ico/empty_win.png" alt="empty win">
+						<img src="assets/textures/ico/filled_win.png" alt="filled win">
+				</div>
+				<div class="row">
+						<h3>shape</h3>
+						<img src="assets/textures/ico/round_win.png" alt="round win">
+						<img src="assets/textures/ico/cubic_win.png" alt="cubic win">
+				</div>
+	  	</div>
+	  </div>
+	  <div class="slide" data-slidr="4">
+	  	<div class="slide-inner">
+				<p>Each stone has 4 different properties.</p>
+				<img src="assets/textures/ico/legend.png" alt="quattro legende properties">
+	  	</div>
+	  </div>
+	  <div class="slide" data-slidr="5">
+	  	<div class="slide-inner">
+				<p>Each stone has 4 different properties.</p>
+				<img src="assets/textures/ico/legend.png" alt="quattro legende properties">
+	  	</div>
+	  </div>
+		<div class="slide" data-slidr="6">
+	  	<div class="slide-inner">
+				<p>Each stone has 4 different properties.</p>
+				<img src="assets/textures/ico/legend.png" alt="quattro legende properties">
+	  	</div>
+	  </div>
+	  <div class="slide" data-slidr="7">
+	  	<div class="slide-inner">
+		  	<p>Select your play mode.</p>
+				<div class="options">
+				<button class="sortButtons sort" data-sortMode="color"><img class="ico" src="assets/textures/ico/color.png" alt="black vs white">black <span class="vs">vs</span> white</button>
+				<button class="sortButtons sort" data-sortMode="height"><img class="ico" src="assets/textures/ico/height.png" alt="tall vs small">tall <span class="vs">vs</span> small</button>
+				<button class="sortButtons sort" data-sortMode="filled"><img class="ico" src="assets/textures/ico/filled.png" alt="empty vs filled">empty <span class="vs">vs</span> filled</button>
+				<button class="sortButtons sort" data-sortMode="shape"><img class="ico" src="assets/textures/ico/shape.png" alt="round vs quad">round <span class="vs">vs</span> quad</button>
+				<button id="startButton">start</button>
+		  </div>
+	  </div>
+	</div>
+
+	
+
+</div>
+</div>
+<div class="UI" id="ui">
+	<div id="turn">Place Stone</div>
+
+</div>
+<button id="next">next</button>
+<div id="gameHolder"></div>
+ 
+<script src="dist/js/three.min.js"></script>	
+<script src="dist/js/orbit_controls.js"></script>	
+<script src="http://cdn.rawgit.com/tweenjs/tween.js/master/src/Tween.js"></script>	
+<script src="dist/js/adjust.min.js"></script>	
+<script src="http://cdn.rawgit.com/bchanx/slidr/master/slidr.min.js"></script>	
+<script src="dist/js/main_script.min.js"></script>	
+</body>
+</html>

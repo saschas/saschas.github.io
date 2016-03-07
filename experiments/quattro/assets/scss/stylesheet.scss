@@ -33,14 +33,20 @@ img{
 button.button {
   width: 200px;
   padding: 10px;
-  border: 1px solid #fff;
+  border: 0; // 1px solid #fff
   color: #fff;
   background: transparent;
-  border-radius: 5px;
   font-size: 120%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  transform: skew(-9.4deg) rotate(-9deg);
 
   &.play{
     background:#45D77B;
+  }
+  &#showTut{
+    background:#E2BC57;
   }
 }
 
@@ -75,18 +81,19 @@ img.ico {
   width: 100px;
   display: block;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 button#startButton {
   display: block;
   width: 100%;
   padding: 10px;
-  border: 0;
-  background: rgba(60, 159, 60,.8);
-  color: #fff;
+  border: 2px solid #fff;
+  color: #000;
   font-size: 90%;
-  border-radius: 5px;
-  margin-top: 50px;
+  background: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transform: rotate(-10deg) skew(-10deg);
 }
 
 
@@ -176,7 +183,9 @@ div#ui {
       text-align: center;
 
       p{
-        margin-bottom:10px;
+        margin-bottom: 20px;
+        font-size: 200%;
+        transform: rotate(-10deg);
       }
     }
   }
@@ -191,11 +200,11 @@ div#ui {
 
 // Customizing a specific controller arrow.
 aside[id="tutGallery-control"] .slidr-control.right {
-  width: 50px!important;
-  height: 50px!important;
+  width: 40px!important;
+  height: 40px!important;
   top: 50% !important;
   margin-top: -25px !important;
-  right: 25px !important;
+  right: 10px !important;
   background: navajowhite;
 }
 
@@ -252,12 +261,12 @@ img.ico_stone {
 .sort {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 3px;
   border: 1px solid #000;
   margin-bottom: 10px;
   background: rgba(0,0,0,.5);
   color: #eee;
-  border-radius: 10px;
+  transform: skew(-10deg) rotate(-10deg);
 }
 
 button[data-sortmode="color"]{

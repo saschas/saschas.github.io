@@ -150,25 +150,7 @@ manager.onLoad = function(){
   new TWEEN.Tween(cam_helper.rotation)
         .to({ y: Math.PI/2 }, 2000).easing(TWEEN.Easing.Cubic.Out).start();
   new TWEEN.Tween(camera.position)
-        .to({ x:0,y: 15,z:20 }, 2000).easing(TWEEN.Easing.Cubic.Out).start();
-
-
-  // tutStone1 = global.stones.team[1][0];
-  // new TWEEN.Tween(tutStone1.position)
-  //       .to({ x: 2,y :3,z:1 }, 2000).easing(TWEEN.Easing.Cubic.Out).start().onComplete(function(){
-  //         tutStone1.tutMode = true;
-          
-  //       });
-
-  // tutStone2 = global.stones.team[2][1];
-  // new TWEEN.Tween(tutStone2.position)
-  //       .to({ x: 2,y :3,z:-1 }, 2000).easing(TWEEN.Easing.Cubic.Out).start().onComplete(function(){
-  //         tutStone2.tutMode = true;
-          
-  //       });
-  
-
-  //round();
+        .to({ x:0,y: 25,z:35 }, 2000).easing(TWEEN.Easing.Cubic.Out).start();
 }
 
 
@@ -214,7 +196,7 @@ scene.add(cam_helper);
 
 var camera = new THREE.PerspectiveCamera( 45, canvas_width/canvas_height, 0.1, 5000 );
 
-  camera.position.set(25,50,25);
+  camera.position.set(0,25,35);
 	cam_helper.add(camera);
 
 

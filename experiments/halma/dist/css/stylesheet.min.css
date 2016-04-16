@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden; }
+
+body[data-team="team1"] .gameCoordinate[data-mark-as-potential="true"] {
+  border: 5px solid lightgreen;
+  background: transparent;
+  box-shadow: inset 0 0 0.3em 0.15em lightgreen; }
+  body[data-team="team1"] .gameCoordinate[data-mark-as-potential="true"]:hover {
+    background: #fff; }
+
+body[data-team="team2"] .gameCoordinate[data-mark-as-potential="true"] {
+  border: 5px solid tomato;
+  background: transparent;
+  box-shadow: inset 0 0 0.3em 0.15em tomato; }
+  body[data-team="team2"] .gameCoordinate[data-mark-as-potential="true"]:hover {
+    background: #fff; }
+
+.gameCoordinate {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  display: inline-block;
+  position: absolute;
+  color: transparent;
+  width: 36px;
+  height: 36px;
+  display: none; }
+  .gameCoordinate[data-mark-as-potential="true"] {
+    display: block;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    border-radius: 50%;
+    padding: 0.3em; }
+
+.noGamePosition {
+  color: #eee; }
+
+button#reset {
+  position: absolute;
+  margin: 10px auto;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 110px; }
+/*# sourceMappingURL=stylesheet.min.css.map */

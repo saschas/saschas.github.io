@@ -8,7 +8,13 @@ var scene,scene2;
 var light;
 var renderer;
 var div;
+
 $(document).ready(function(){
+  function injectStyles(rule) {
+      var div = $("<div />", {
+        html: '&shy;<style>' + rule + '</style>'
+      }).appendTo("body");    
+    }
     console.log(!Modernizr.touchevents ,window.innerWidth > 700);
         var tags = function(){
             var $thumbs = $('.webGL');
@@ -32,10 +38,10 @@ $(document).ready(function(){
             });
 
             tags = tags.sort();
+
+            var classArray = [];
             $.each(tags,function(index,c){
                 var $span = $('<button>');
-
-
                 var attr = c;
 
                 if(c=='twoD'){
@@ -47,43 +53,49 @@ $(document).ready(function(){
                     c = '3D';
                     attr = 'threeD';
                 }
-
-
                 if(c!='webGL'){
                    $span.attr('data-tag',attr).append(c);
                     $tag_holder.append($span);
                 }
+                 $span.click(function(){
 
-            });
+                  console.log('click',$(this).data('tag'));
+                    var tag = $(this).data('tag');
+                   
+                    if($('body').hasClass(tag)){
+                        $('body').removeClass(tag);
+                        $(this).removeClass('active');
+                    }  
+                    else{
+                        $('body').addClass(tag);
+                        $(this).addClass('active');
+                        $('body').addClass('filter');
+                    }
+                 });
 
-            $tag_holder.addClass('tags-complete');
 
+                  //Store all names in one big array for styles
+                  classArray.push('.filter.'+c+' .'+c+ '{display:block!important;}');
+                  
+                  $('body').append($styleEl);
+
+                  });//end of each
+
+
+                  var $styleEl = $('<style>');
+                  $styleEl.type = 'text/css';
+                  $styleEl.append(classArray.join(''));
+                  $('body').prepend($styleEl);
+                  injectStyles(classArray.join(','));
+
+                  $tag_holder.addClass('tags-complete');
+
+            
+           
+            
             return tags;
+
         }();
-
-    
-   //$('.experiments-tags').click(function(){
-   //    $(this).toggleClass('tags-open');
-   //    $(this).toggleClass('tags-visible');
-   //});
-
-   $('.tags button').click(function(){
-       var tag = $(this).data('tag');
-     
-     if($('body').hasClass(tag)){
-         $('body').removeClass(tag);
-         $(this).removeClass('active');
-     }  
-     else{
-         $('body').addClass(tag);
-         $(this).addClass('active');
-         $('body').addClass('filter');
-     }
-
-     if($('body').attr('class').length == 6){
-        $('body').removeClass('filter');
-     }
-   });
    
 
    $('#view_experiment').css({
@@ -105,11 +117,6 @@ $(document).ready(function(){
             }
         });       
    });
-
-    
-
-
-
 });
 
 //init();

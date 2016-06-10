@@ -104,7 +104,7 @@ $(document).ready(function(){
    });
 
 
-   $('.webGL a').click(function(e){
+   $('.webGL a:not(.external)').click(function(e){
        e.preventDefault(e);
 
         $('#preview').addClass('open_iframe');

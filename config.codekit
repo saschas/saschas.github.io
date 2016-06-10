@@ -5417,6 +5417,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/experiments\/VR-Boilerplate\/dist\/ext_js\/three_and_controls.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/ext_js\/three_and_controls.min.js",
+		"outputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/ext_js\/min\/three_and_controls.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/VR-Boilerplate\/dist\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/js\/main.js",
+		"outputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/VR-Boilerplate\/dist\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/js\/min\/main.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/VR-Boilerplate\/dist\/textures\/cardboard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2754,
+		"inputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/textures\/cardboard.png",
+		"outputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/textures\/cardboard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/experiments\/VR-Boilerplate\/dist\/textures\/orbit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3681,
+		"inputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/textures\/orbit.png",
+		"outputAbbreviatedPath": "\/experiments\/VR-Boilerplate\/dist\/textures\/orbit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/experiments\/VR-Boilerplate\/gulpfile.js": {
 		"fileType": 64,
 		"ignore": 0,

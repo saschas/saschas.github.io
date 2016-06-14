@@ -1,3 +1,6 @@
 [submodule "experiments/VR-Boilerplate"]
 	path = experiments/VR-Boilerplate
 	url = https://saschas@github.com/saschas/VR-Boilerplate.git
+[submodule "experiments/VRPointer"]
+	path = experiments/VRPointer
+	url = https://saschas@github.com/saschas/VRPointer.git

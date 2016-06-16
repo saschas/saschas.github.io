@@ -4834,9 +4834,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/main_script.js",
-		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script-min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
@@ -4851,9 +4851,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/tree\/assets\/js\/min\/main_script-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script-min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/main_script-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/tree\/assets\/js\/min\/main_script.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/main_script.min.js",
 		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/min\/main_script.min-min.js",
@@ -4928,12 +4939,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/tree\/assets\/js\/post\/min\/EffectComposer-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/EffectComposer-min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/min\/EffectComposer-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/tree\/assets\/js\/post\/min\/ShaderExtras-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderExtras-min.js",
 		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/min\/ShaderExtras-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post\/min\/ShaderPass-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderPass-min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/min\/ShaderPass-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4978,6 +5011,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/ShaderPass.js",
 		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/ShaderPass-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/tree\/assets\/js\/post_effects.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post_effects.min.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/min\/post_effects.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

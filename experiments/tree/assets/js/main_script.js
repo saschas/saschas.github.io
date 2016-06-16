@@ -1,3 +1,4 @@
+window.onload = function() {
 var main_color = 0xffffff;
 var canvas_height = window.innerHeight;
 var canvas_width = window.innerWidth;
@@ -110,7 +111,7 @@ var composer = new THREE.EffectComposer(renderer);
 //var depthMaterial = new THREE.ShaderMaterial;
 //var depthTarget = new THREE.WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter, format: THREE.RGBAFormat } );
 
-composer.setSize(window.innerWidth, window.innerHeight);
+//composer.setSize(window.innerWidth, window.innerHeight);
 
 
 var effectOutline = new THREE.ShaderPass({
@@ -556,3 +557,5 @@ function animation(time){
 //_________________________________
 
 render(time);
+
+}();

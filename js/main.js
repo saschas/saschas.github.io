@@ -108,20 +108,13 @@ $(document).ready(function(){
    $('.webGL a:not(.external)').click(function(e){
        e.preventDefault(e);
 
-        $('#preview').addClass('open_iframe');
 
        var link = $(this).attr('href');
 
        link = base_url + link;
       console.log(link);
-       $('#new_tab_iframe').attr('href',link).attr('target','_blank');
 
-
-        $('#view_experiment').unbind('load').attr('src',link).bind({
-            load : function(){
-                $(this).show().addClass('complete');
-            }
-        });       
+      window.open(link,'_blank');
    });
 });
 

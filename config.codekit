@@ -85,6 +85,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/audio_as_driver\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/audio_as_driver\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/audio_as_driver\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/audio_as_driver\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -125,6 +136,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/audio_graph\/js\/index.js",
 		"outputAbbreviatedPath": "\/experiments\/audio_graph\/js\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/audio_graph\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/audio_graph\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/audio_graph\/js\/min\/orbit_controls-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -175,6 +197,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/audio_spectrum\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/audio_spectrum\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/audio_spectrum\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/audio_spectrum\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -215,6 +248,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/bar_chart\/js\/index.js",
 		"outputAbbreviatedPath": "\/experiments\/bar_chart\/js\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/bar_chart\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/bar_chart\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/bar_chart\/js\/min\/orbit_controls-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

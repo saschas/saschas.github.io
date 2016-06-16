@@ -61,7 +61,6 @@ $(document).ready(function(){
                 }
                  $span.click(function(){
 
-                  console.log('click',$(this).data('tag'));
                     var tag = $(this).data('tag');
                    
                     if($('body').hasClass(tag)){
@@ -112,11 +111,13 @@ $(document).ready(function(){
         $('#preview').addClass('open_iframe');
 
        var link = $(this).attr('href');
-      
-       $('#new_tab_iframe').attr('href',base_url + link).attr('target','_blank');
+
+       link = base_url + link;
+      console.log(link);
+       $('#new_tab_iframe').attr('href',link).attr('target','_blank');
 
 
-        $('#view_experiment').unbind('load').attr('src',base_url + link).bind({
+        $('#view_experiment').unbind('load').attr('src',link).bind({
             load : function(){
                 $(this).show().addClass('complete');
             }

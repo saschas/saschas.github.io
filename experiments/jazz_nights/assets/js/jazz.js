@@ -645,7 +645,7 @@ Element.prototype.hasClass = function(className) {
       	// _____________________ Renderer
 
         renderer = new THREE.WebGLRenderer( { antialias: true,transparent:true,alpha: true  });
-        renderer.setPixelRatio( window.devicePixelRatio );
+        //renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( window.innerWidth, window.innerHeight );
         container.appendChild( renderer.domElement );
         renderer.shadowMap.enabled = true;

@@ -1418,6 +1418,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/jazz_nights\/assets\/js\/min\/jazz-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/jazz_nights\/assets\/js\/min\/jazz-min.js",
+		"outputAbbreviatedPath": "\/experiments\/jazz_nights\/assets\/js\/min\/min\/jazz-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/jazz_nights\/assets\/js\/min\/three-min.js": {
 		"fileType": 64,
 		"ignore": 1,

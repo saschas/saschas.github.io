@@ -3442,12 +3442,34 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/experiments\/rollercoaster_island\/js\/fly_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/fly_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/min\/fly_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/rollercoaster_island\/js\/index.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/index.js",
 		"outputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/rollercoaster_island\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/rollercoaster_island\/js\/min\/orbit_controls-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

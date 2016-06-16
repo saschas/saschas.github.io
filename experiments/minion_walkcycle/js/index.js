@@ -278,7 +278,7 @@
 
           animation.walk = new THREE.Animation(minion, geometry.animation[0]);
           animation.walk.play();
-          animation.walk.timeScale = 5;
+          animation.walk.timeScale = 1;
 
           helper = new THREE.SkeletonHelper(minion);
           helper.material.linewidth = 1;

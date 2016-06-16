@@ -427,6 +427,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/creepy_head\/js\/min\/index-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/creepy_head\/js\/min\/index-min.js",
+		"outputAbbreviatedPath": "\/experiments\/creepy_head\/js\/min\/min\/index-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/creepy_head\/js\/orbit_controls.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -2139,12 +2150,34 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/experiments\/particle_island\/js\/fly_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/particle_island\/js\/fly_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/particle_island\/js\/min\/fly_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/particle_island\/js\/index.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/particle_island\/js\/index.js",
 		"outputAbbreviatedPath": "\/experiments\/particle_island\/js\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/particle_island\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/particle_island\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/particle_island\/js\/min\/orbit_controls-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

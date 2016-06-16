@@ -4278,6 +4278,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/streetview\/assets\/js\/tween.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/streetview\/assets\/js\/tween.js",
+		"outputAbbreviatedPath": "\/experiments\/streetview\/dist\/js\/tween.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/streetview\/assets\/json\/corner.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -4584,6 +4595,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/streetview\/dist\/js\/three.min.js",
 		"outputAbbreviatedPath": "\/experiments\/streetview\/dist\/js\/min\/three.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/streetview\/dist\/js\/tween.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/streetview\/dist\/js\/tween.min.js",
+		"outputAbbreviatedPath": "\/experiments\/streetview\/dist\/js\/min\/tween.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -5552,6 +5574,38 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/experiments\/VRPointer\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/VRPointer\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/experiments\/VRPointer\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/experiments\/VRPointer\/VRPointer.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/VRPointer\/VRPointer.js",
+		"outputAbbreviatedPath": "\/experiments\/VRPointer\/min\/VRPointer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/experiments\/winterwonderland\/css\/style.css": {
 		"fileType": 16,
@@ -6532,8 +6586,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "new",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "saschas.github.io",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "globe_brown"
 	},
 "projectSettings": {

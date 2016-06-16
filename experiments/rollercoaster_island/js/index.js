@@ -662,7 +662,7 @@
           opacity: .25,
         });
 
-        for (var i = 0; i < 1000; i++) {
+        for (var i = 0; i < 500; i++) {
           var x = randNum(0, 100, true);
           var y = randNum(0, 100, true);
           var z = randNum(0, 100, true);

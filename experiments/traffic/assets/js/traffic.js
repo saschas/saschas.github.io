@@ -308,18 +308,17 @@ for(var n=0;n<250;n++){
 		
 			
 			rim_light.castShadow = true;
-			rim_light.shadowCameraVisible = false;
-			rim_light.shadowMapWidth = 1024 ;
-    		rim_light.shadowMapHeight = 1024 ;
+			rim_light.shadow.mapSize.width = 1024 ;
+    	rim_light.shadow.mapSize.height = 1024 ;
 
 			
 			var d = 350;
 		
-			rim_light.shadowCameraLeft = -d;
-			rim_light.shadowCameraRight = d;
-			rim_light.shadowCameraTop = d ;
-			rim_light.shadowCameraBottom = -d;
-			rim_light.shadowCameraNear = 0.01;
+			rim_light.shadow.camera.left = -d;
+			rim_light.shadow.camera.right = d;
+			rim_light.shadow.camera.top = d ;
+			rim_light.shadow.camera.bottom = -d;
+			rim_light.shadow.camera.near = 0.01;
 
 			scene.add(rim_light);
 			
@@ -367,7 +366,7 @@ start_scene();
 function animate(time) {
 
   requestAnimationFrame( animate );
-  
+  controls.update();
   render(time);
 
 }

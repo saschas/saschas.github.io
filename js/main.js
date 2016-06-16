@@ -9,6 +9,8 @@ var light;
 var renderer;
 var div;
 
+var base_url = 'https://saschas.github.io/';
+
 $(document).ready(function(){
   function injectStyles(rule) {
       var div = $("<div />", {
@@ -110,8 +112,11 @@ $(document).ready(function(){
         $('#preview').addClass('open_iframe');
 
        var link = $(this).attr('href');
-       $('#new_tab_iframe').attr('href',link).attr('target','_blank');
-        $('#view_experiment').unbind('load').attr('src',link).bind({
+      
+       $('#new_tab_iframe').attr('href',base_url + link).attr('target','_blank');
+
+
+        $('#view_experiment').unbind('load').attr('src',base_url + link).bind({
             load : function(){
                 $(this).show().addClass('complete');
             }

@@ -648,7 +648,7 @@ Element.prototype.hasClass = function(className) {
         //renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( window.innerWidth, window.innerHeight );
         container.appendChild( renderer.domElement );
-        renderer.shadowMap.enabled = true;
+        //renderer.shadowMap.enabled = true;
 
       	//_____________________ Main Scene
         scene = new THREE.Scene();

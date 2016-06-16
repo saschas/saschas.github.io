@@ -2004,6 +2004,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/oscillator\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/oscillator\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/oscillator\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/oscillator\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

@@ -4895,6 +4895,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/tree\/assets\/js\/post\/CopyShader.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/CopyShader.js",
+		"outputAbbreviatedPath": "\/experiments\/tree\/assets\/js\/post\/min\/CopyShader-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/tree\/assets\/js\/post\/EffectComposer.js": {
 		"fileType": 64,
 		"ignore": 0,

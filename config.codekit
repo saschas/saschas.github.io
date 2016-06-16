@@ -265,6 +265,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/baseball_hit\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/baseball_hit\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/baseball_hit\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/baseball_hit\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1828,6 +1839,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/experiments\/minion_walkcycle\/js\/index.js",
 		"outputAbbreviatedPath": "\/experiments\/minion_walkcycle\/js\/min\/index-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/experiments\/minion_walkcycle\/js\/min\/index-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/minion_walkcycle\/js\/min\/index-min.js",
+		"outputAbbreviatedPath": "\/experiments\/minion_walkcycle\/js\/min\/min\/index-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

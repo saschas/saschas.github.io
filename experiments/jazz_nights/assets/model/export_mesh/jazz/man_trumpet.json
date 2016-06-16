@@ -2087,7 +2087,6 @@
         "DbgColor": 15658734,
         "wireframe": false,
         "depthWrite": true,
-        "mapDiffuse": "man_texture.jpg",
         "colorDiffuse": [0.207916259765625,0.059299200773239136,0.011288195848464966],
         "DbgIndex": 0,
         "shading": "lambert",

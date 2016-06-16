@@ -991,6 +991,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/experiments\/generic_logo\/assets\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/generic_logo\/assets\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/generic_logo\/assets\/model\/diesdas.json": {
 		"fileType": 524288,
 		"ignore": 1,

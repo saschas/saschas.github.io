@@ -116,7 +116,7 @@ function init() {
 
   var image = document.createElement( 'img' );
   image.crossOrigin = 'anonymous';
-image.src = 'http://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/eye.jpg';
+image.src = 'https://crossorigin.me/https://s3-us-west-2.amazonaws.com/s.cdpn.io/61062/eye.jpg';
   
 
 var texture = new THREE.Texture( image );

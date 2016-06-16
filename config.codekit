@@ -556,6 +556,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/experiments\/cycle_through_the_night\/js\/orbit_controls.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/js\/orbit_controls.js",
+		"outputAbbreviatedPath": "\/experiments\/cycle_through_the_night\/js\/min\/orbit_controls-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/experiments\/cycle_through_the_night\/js\/prefixfree.min.js": {
 		"fileType": 64,
 		"ignore": 0,

@@ -1,0 +1,86 @@
+$loadingColor: #413E4A;
+
+//______________________________
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  margin:0;
+  overflow:hidden;
+}
+//______________________________
+
+
+
+.ready .loading {
+    opacity: 0;
+}
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $loadingColor;
+  transition-duration: .25s;
+}
+
+.loading-inner {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background: #9E9E9E;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding:0 1px;
+}
+
+#loadingStatus {
+    height: 3px;
+    background: $loadingColor;
+    margin: auto;
+    position: relative;
+    top: 1px;
+}
+//______________________________
+
+button.switch_to_vr,
+button.switch_to_orbit {
+  position: fixed;
+  width: 70px;
+  height: 58px;
+  right: 0;
+  top: 10px;
+  z-index: 1;
+  border: 0;
+  background-size: 60px auto;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 34px;
+  font-size:10px;
+
+
+  &.hide{
+    display: none;
+  }
+}
+
+
+
+button.switch_to_orbit{
+	background-size: 30px auto;
+	background-image: url(../textures/orbit.png);
+}
+button.switch_to_vr{
+	background-image: url(../textures/cardboard.png);
+}
+
+

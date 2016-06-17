@@ -563,7 +563,7 @@ function eye(assets){
   var eye = new THREE.SkinnedMesh( assets.geometry.eye , eyeMaterial );
       eye.name = 'eye';
 
-  for(var i=0;i<60;i++){
+  for(var i=0;i<30;i++){
     var scaleFac = randNum(.5,3,false);
     var rotEye = randNum(.1,.9,false);
     

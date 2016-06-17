@@ -710,6 +710,7 @@ function eye(assets){
     instanceEye[i].scale.set(scaleFac,scaleFac,scaleFac);
     instanceEye[i].updateMatrix();
     instanceEye[i].matrixAutoUpdate = false;
+    instanceEye[i].castShadow = true;
 
     instanceEye[i].update= function() {
       if(Adjust.vr){

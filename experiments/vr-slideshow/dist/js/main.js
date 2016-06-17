@@ -179,7 +179,7 @@ var models = {
 
 var slides = []
 var placeHolder = '';
-for(var i=0;i<39;i++){
+for(var i=0;i<40;i++){
   placeHolder = i<10 ? '0' : '';
   slides.push({
     name : 'slide-' + placeHolder + i,

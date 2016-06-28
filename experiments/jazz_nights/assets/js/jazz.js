@@ -1,10 +1,10 @@
+	
+	var container;
 
-    var container;
+	var camera, scene,controls;
+	var raycaster = new THREE.Raycaster();
 
-    var camera, scene,controls;
-    var raycaster = new THREE.Raycaster();
-
-    var renderer;
+	var renderer;
 	
 	var clock = new THREE.Clock();
 	var time = 0;
@@ -184,22 +184,7 @@ play_button.addEventListener('click',function(){
     jazz_song.play();
     jazz_song.pause();
     å.animate = true;
-    // jazz_song.onloadedmetadata = function() {
-    // 	å.duration = this.buffered.end(0);
-    // }
-    // jazz_song.onprogress = function(){
-    //   var loadedPercentage = å.duration / this.duration;
-    //   load_audio_indication(loadedPercentage * 100)
-    // }
-    jazz_song.oncanplaythrough = function(){
-      å.animate = true;
-      jazz_song.play();
     
-	    for (t in å.texture) {
-	      å.texture[t].needsUpdate = true;
-	    }
-	    load_holder.setAttribute('class','playing');
-    }
   }
 });
     
@@ -695,8 +680,16 @@ Element.prototype.hasClass = function(className) {
       	load_audio_indication(loadedPercentage * 100)
       }
 
-      jazz_song.onload = function() {
+      jazz_song.oncanplaythrough = function() {
 				 å.complete.audio = true;
+				 å.animate = true;
+		      jazz_song.play();
+		    
+			    for (t in å.texture) {
+			      å.texture[t].needsUpdate = true;
+			    }
+			    controls.update();
+			    load_holder.setAttribute('class','playing');
 			}
 
 
@@ -711,9 +704,9 @@ Element.prototype.hasClass = function(className) {
 
 		//Main STAGE TEXTURE
 		 	audio_canvas_visualizer = document.createElement('canvas');
-            audio_canvas_visualizer.setAttribute('class','texture_canvas');
-		 	 audio_canvas_visualizer.width = 300;
-			 audio_canvas_visualizer.height = 300;			
+      audio_canvas_visualizer.setAttribute('class','texture_canvas');
+		 	audio_canvas_visualizer.width = 300;
+			audio_canvas_visualizer.height = 300;			
 
 		 document.body.appendChild(audio_canvas_visualizer);
 	
@@ -755,10 +748,10 @@ Element.prototype.hasClass = function(className) {
 		
 		// ___________________________________________ Second Texture Canvas - topTexture
 		 	audio_canvas_visualizer_top = document.createElement('canvas');
-		 	 audio_canvas_visualizer_top.width = 200;
-			 audio_canvas_visualizer_top.height = 200;
-        audio_canvas_visualizer_top.setAttribute('class','texture_canvas');
-		 document.body.appendChild(audio_canvas_visualizer_top);
+		 	audio_canvas_visualizer_top.width = 200;
+			audio_canvas_visualizer_top.height = 200;
+      audio_canvas_visualizer_top.setAttribute('class','texture_canvas');
+		 	document.body.appendChild(audio_canvas_visualizer_top);
 
 		c_top = audio_canvas_visualizer_top.getContext('2d');
 		c_top.fillStyle =  '#542437';

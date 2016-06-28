@@ -681,7 +681,7 @@ Element.prototype.hasClass = function(className) {
 
 		  var jazz_song = document.getElementById('jazz_song');
 		  
-      jazz_song.onprogress = function() {
+      jazz_song.loadedmetadata = function() {
         var loadedPercentage = this.buffered.end(0) / this.duration;
        // load_audio_indication(loadedPercentage);
         if(loadedPercentage == 1){

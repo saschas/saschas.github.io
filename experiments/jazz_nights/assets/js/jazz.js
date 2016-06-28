@@ -64,6 +64,7 @@ var texture_saxo =texture_trumpet;
     var å = {
       animate : false,
       play : false,
+      duration : 0,
     	ready : {
     		count:0
     	},
@@ -183,8 +184,11 @@ play_button.addEventListener('click',function(){
     jazz_song.play();
     jazz_song.pause();
     
+    jazz_song.onloadedmetadata = function() {
+    	å.duration = this.buffered.end(0);
+    }
     jazz_song.onprogress = function(){
-      var loadedPercentage = this.buffered.end(0) / this.duration;
+      var loadedPercentage = å.duration / this.duration;
       load_audio_indication(loadedPercentage * 100)
     }
     jazz_song.oncanplaythrough = function(){
@@ -681,13 +685,20 @@ Element.prototype.hasClass = function(className) {
 
 		  var jazz_song = document.getElementById('jazz_song');
 		  
-      jazz_song.loadedmetadata = function() {
-        var loadedPercentage = this.buffered.end(0) / this.duration;
-       // load_audio_indication(loadedPercentage);
-        if(loadedPercentage == 1){
-          å.complete.audio = true;
-        }
+      jazz_song.onloadedmetadata = function() {
+      	å.duration = this.buffered.end(0);
       };
+
+      jazz_song.onprogress = function (argument) {
+      	
+      	loadedPercentage = å.duration / this.duration;
+      }
+
+      jazz_song.onload = function() {
+				 å.complete.audio = true;
+			}
+
+
 		  var audioSrc = audio_context.createMediaElementSource(jazz_song);
 		  	  analyser = audio_context.createAnalyser();
 		  	  analyser.fftSize = 32;

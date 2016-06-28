@@ -183,22 +183,22 @@ play_button.addEventListener('click',function(){
    // å.animate = true;
     jazz_song.play();
     jazz_song.pause();
-    
-    jazz_song.onloadedmetadata = function() {
-    	å.duration = this.buffered.end(0);
-    }
-    jazz_song.onprogress = function(){
-      var loadedPercentage = å.duration / this.duration;
-      load_audio_indication(loadedPercentage * 100)
-    }
+    å.animate = true;
+    // jazz_song.onloadedmetadata = function() {
+    // 	å.duration = this.buffered.end(0);
+    // }
+    // jazz_song.onprogress = function(){
+    //   var loadedPercentage = å.duration / this.duration;
+    //   load_audio_indication(loadedPercentage * 100)
+    // }
     jazz_song.oncanplaythrough = function(){
       å.animate = true;
       jazz_song.play();
     
-    for (t in å.texture) {
-      å.texture[t].needsUpdate = true;
-    }
-    load_holder.setAttribute('class','playing');
+	    for (t in å.texture) {
+	      å.texture[t].needsUpdate = true;
+	    }
+	    load_holder.setAttribute('class','playing');
     }
   }
 });
@@ -692,6 +692,7 @@ Element.prototype.hasClass = function(className) {
       jazz_song.onprogress = function (argument) {
       	
       	loadedPercentage = å.duration / this.duration;
+      	load_audio_indication(loadedPercentage * 100)
       }
 
       jazz_song.onload = function() {

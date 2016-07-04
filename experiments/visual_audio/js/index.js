@@ -212,6 +212,7 @@ var plane = new THREE.Mesh( plane_geometry, plane_material );
 var render = function () { 
   requestAnimationFrame( render ); 
   animation();
+  controls.update();
   renderer.render(scene, camera);
 };
 //////////////////////////////////////////

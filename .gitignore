@@ -1,1 +1,2 @@
 *.psd
+/experiments/bezier3d/node_modules

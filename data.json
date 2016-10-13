@@ -1,0 +1,309 @@
+{"data":[
+  {
+    "tags" : "bezier lerp vectorfield",
+    "link" : "experiments/vector-field/index.html",
+    "img": "thumb/052_thumb.jpg",
+    "alt": "vectorfield",
+    "title":"Vector field",
+    "content":"Calculate vector(pressure) at any given point.",
+    "jsSRC" : ["experiments/vector-field/js/index.js"] 
+    },
+  {
+    "tags" : "webGL bezier threeD lerp",
+    "link" : "experiments/bezier3d/index.html",
+    "img": "thumb/051_thumb.jpg",
+    "alt": "bezier 3d",
+    "title":"Linear interpolation",
+    "content":"Create a Bezier Curve with linear interpolation and make an object follow that path.",
+    "jsSRC" : ["experiments/bezier3d/dist/js/main.js"] 
+    },
+  {
+    "tags" : "webGL slideshow threeD vr",
+    "link" : "experiments/vr-slideshow/index.html",
+    "img": "thumb/050_thumb.jpg" ,
+    "alt":"VR Slideshow",
+    "title":"VR Slideshow",
+    "content":"<a class='external' href='http://www.vroop.space/'>Maren Demant's</a> presentation for <a class='external' href='http://popathon.org/berlin/'>Popathon Berlin</a> in VR",
+    "jsSRC" : ["experiments/vr-slideshow/dist/js/main.js"] 
+  },
+  {
+    "tags" : "webGL boilerplate threeD vr",
+    "link" : "experiments/VR-Boilerplate/index.html",
+    "img": "thumb/049_thumb.jpg" ,
+    "alt":"VR Boilerplate",
+    "title":"VR Boilerplate",
+    "content":"For more info check out the repo <a class='external' href='https://github.com/saschas/VR-Boilerplate'>VR-Boilerplate.</a>",
+  "jsSRC" : ["experiments/VR-Boilerplate/dist/js/main.js"] 
+  },
+  {
+    "tags" : "webGL blender game interactive threeD",
+    "link" : "experiments/halma/index.html",
+    "img": "thumb/048_thumb.jpg" ,
+    "alt":"Halma Game",
+    "title":"Halma",
+    "content":"Play Halma.",
+  "jsSRC" : ["experiments/halma/dist/js/main_script.min.js"] 
+  },
+  {
+    "tags" : "webGL blender interior texture threeD",
+    "link" : "experiments/room/index.html",
+    "img": "thumb/046_thumb.jpg" ,
+    "alt":"Baking Light",
+    "title":"Room",
+    "content":"Baking Light Texture.",
+  "jsSRC" : ["experiments/room/dist/js/main_script.min.js"] 
+  },
+  {
+    "tags" : "webGL blender skeletal morph threeD",
+    "link" : "experiments/spread_love/index.html",
+    "img": "thumb/045_thumb.jpg" ,
+    "alt":"Spread some love",
+    "title":"Spread some love",
+    "content":"Morph Animation and skeletal manipulation.",
+  "jsSRC" : ["experiments/spread_love/dist/js/main_script.min.js"] 
+  },
+  {
+    "tags" : "webGL blender skeletal material threeD",
+    "link" : "experiments/flower/index.html",
+    "img": "thumb/044_thumb.jpg" ,
+    "alt":"Gras Terrain",
+    "title":"Rendering Grass Terrain",
+    "content":"static grass.",
+  "jsSRC" : ["experiments/flower/assets/js/min/main_script.min.js"] 
+  },
+  {
+    "tags" : "webGL blender threejs mask threeD animation",
+    "link" : "experiments/traffic",
+    "img": "thumb/041_thumb.jpg" ,
+    "alt":"traffic",
+    "title":"Traffic",
+    "content":"text mask effect.",
+  "jsSRC" : ["experiments/traffic/assets/js/traffic.js"] 
+  },
+  {
+    "tags" : "webGL blender threejs skeletal threeD",
+    "link" : "experiments/jazz_nights",
+    "img": "thumb/039_thumb.jpg" ,
+    "alt":"jazz nights",
+    "title":"Jazz night",
+    "content":"Skeletal Animation.",
+  "jsSRC" : ["experiments/jazz_nights/assets/js/jazz.js"] 
+  },
+  {
+    "tags" : "webGL blender threejs skeletal threeD",
+    "link" : "experiments/cycle_through_the_night",
+    "img": "thumb/000_thumb.jpg" ,
+    "alt":"cycle_through_the_night",
+    "title":"Cylce through the night",
+    "content":"Skeletal Animation.",
+  "jsSRC" : ["experiments/cycle_through_the_night/js/index.js"] 
+  },
+  {
+    "tags" : "webGL blender threejs material threeD",
+    "link" : "experiments/custom_shader_material",
+    "img": "thumb/001_thumb.jpg" ,
+    "alt":"custom_shader_material",
+    "title":"CustomShader Material",
+    "content":"threshold material.",
+  "jsSRC" : ["experiments/custom_shader_material/js/index.js"] 
+  },
+  {
+    "tags" : "webGL blender threejs skeletal threeD",
+    "link" : "experiments/minion_walkcycle",
+    "img": "thumb/002_thumb.jpg",
+    "alt":"minion_walkcycle",
+    "title":"Minion walkcycle",
+    "content":"click to change the facial expression.",
+  "jsSRC" : ["experiments/minion_walkcycle/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threeD blender threejs particles",
+    "link" : "experiments/baseball_hit",
+    "img": "thumb/003_thumb.jpg" ,
+    "alt":"baseball_hit",
+    "title":"Baseball Hit",
+    "content":"Timing: Particle Dust when bat hit the ball.",
+  "jsSRC" : ["experiments/baseball_hit/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threeD threejs follow_camera line extrude_geometry",
+    "link" : "experiments/rollercoaster_island",
+    "img": "thumb/004_thumb.jpg" ,
+    "alt":"rollercoaster_island",
+    "title":"Rollercoaster Island",
+    "content":"Camera follow path. Take a ride.",
+  "jsSRC" : ["experiments/rollercoaster_island/js/index.js"] 
+  },
+  {
+    "tags" : "webGL live_input threejs threeD video",
+    "link" : "experiments/transparent_video",
+    "img": "thumb/005_thumb.jpg" ,
+    "alt":"transparent_video",
+    "title":"Transparent Video",
+    "content":"Video rendered on canvas and used as texture.",
+  "jsSRC" : ["experiments/transparent_video/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threejs threeD blender skeletal morph material video particle",
+    "link" : "experiments/playing_kid",
+    "img": "thumb/006_thumb.jpg" ,
+    "alt":"playing_kid",
+    "title":"playing kid",
+    "content":"Skeletal and Morph Animation combined. Live camera input.",
+  "jsSRC" : ["experiments/playing_kid/js/index.js"] 
+  },
+  {
+    "tags" : "webGL morph blender threejs threeD follow_camera",
+    "link" : "experiments/creepy_head",
+    "img": "thumb/007_thumb.jpg" ,
+    "alt":"creepy_head",
+    "title":"creepy head",
+    "content":"Morph Animation. Eyes lookAt camera.",
+  "jsSRC" : ["experiments/creepy_head/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threejs threeD blender skeletal",
+    "link" : "experiments/headstand",
+    "img": "thumb/009_thumb.jpg" ,
+    "alt":"headstand",
+    "title":"headstand",
+    "content":"Skeletal Animation.",
+  "jsSRC" : ["experiments/headstand/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threejs threeD particles blender pointCloud",
+    "link" : "experiments/particle_island",
+    "img": "thumb/008_thumb.jpg" ,
+    "alt":"particle_island",
+    "title":"Particle Island",
+    "content":"pointCloud.",
+  "jsSRC" : ["experiments/particle_island/js/index.js"] 
+  },
+  {
+    "tags" : "webGL threejs threeD collision_detection merged_geometry",
+    "link" : "experiments/sphere_volume_detection",
+    "img": "thumb/010_thumb.jpg",
+    "alt":"sphere_volume_detection",
+    "title":"sphere volume detection",
+    "content":"collision detection.",
+  "jsSRC" : ["experiments/sphere_volume_detection/js/index.js"] 
+  },
+  {
+    "tags" : "webGL particles audioBuffer audio canvas",
+    "link" : "experiments/visual_audiobuffer",
+    "img": "thumb/015_thumb.jpg" ,
+    "alt":"visual_audiobuffer",
+    "title":"Visual AudioBuffer",
+    "content":"Function describes the AudioBuffer(44100) that you can manipulate live.",
+  "jsSRC" : ["experiments/visual_audiobuffer/js/index.js"] 
+  },
+  {
+    "tags" : "webGL collision_detection audio oscillator click_event",
+    "link" : "experiments/oscillator",
+    "img": "thumb/018_thumb.jpg" ,
+    "alt":"oscillator",
+    "title":"Oscillator",
+    "content":"Drag sphere to change the oscillator.",
+  "jsSRC" : ["experiments/oscillator/js/index.js"] 
+  },
+  {
+    "tags" : "webGL terrain audioBuffer audio threejs",
+    "link" : "experiments/visual_audio",
+    "img": "thumb/032_thumb.jpg" ,
+    "alt":"visual_audio",
+    "title":"Visual Audio",
+    "content":"3D representation of sound spectrum.",
+  "jsSRC" : ["experiments/visual_audio/js/index.js"] 
+  },
+  {
+    "tags" : "webGL live_input twoD canvas audio",
+    "link" : "experiments/live_audio_input",
+    "img": "thumb/035_thumb.jpg" ,
+    "alt":"live_audio_input",
+    "title":"Live Audio input",
+    "content":"Visualize your own live Audio Input as Spectrum on Canvas.",
+  "jsSRC" : ["experiments/live_audio_input/js/index.js"] 
+  },
+   {
+    "tags" : "webGL twoD canvas audio",
+    "link" : "experiments/audio_graph",
+    "img": "thumb/040_thumb.jpg" ,
+    "alt":"audio_graph",
+    "title":"Audio Spectrum",
+    "content":"Visual Audio Spectrum on Canvas",
+  "jsSRC" : ["experiments/audio_graph/js/index.js"] 
+  },
+  {
+    "tags" : "webGL audio threejs live_input",
+    "link" : "experiments/audio_spectrum",
+    "img": "thumb/033_thumb.jpg" ,
+    "alt":"audio_spectrum",
+    "title":"Audio Spectrum",
+    "content":"bar chart.",
+  "jsSRC" : ["experiments/audio_spectrum/js/index.js"] 
+  },
+  {
+    "tags" : "webGL audio threejs live_input line",
+    "link" : "experiments/audio_as_driver",
+    "img": "thumb/034_thumb.jpg" ,
+    "alt":"audio_as_driver",
+    "title":"Audio as driver",
+    "content":"Sphere scale based on sound.",
+  "jsSRC" : ["experiments/audio_as_driver/js/index.js"] 
+  },
+  {
+    "tags" : "webGL canvas particles collision_detection twoD",
+    "link" : "experiments/particle_grid",
+    "img": "thumb/011_thumb.jpg" ,
+    "alt":"particle_grid",
+    "title":"Particle Grid",
+    "content":"Detect if particle is in circle.",
+  "jsSRC" : ["experiments/particle_grid/js/index.js"] 
+  },
+  {
+    "tags" : "webGL canvas particles collision_detection click_event twoD",
+    "link" : "experiments/particle_magnet",
+    "img": "thumb/012_thumb.jpg" ,
+    "alt":"particle_magnet",
+    "title":"Particle Magnet",
+    "content":"Detect if particle is in circle.",
+  "jsSRC" : ["experiments/particle_magnet/js/index.js"] 
+  },
+  {
+    "tags" : "webGL canvas particles playground twoD gravity",
+    "link" : "experiments/particle_playground",
+    "img": "thumb/013_thumb.jpg" ,
+    "alt":"particle_playground",
+    "title":"Particle Playground",
+    "content":"Change the start point and describe the function that runs every frame.",
+  "jsSRC" : ["experiments/particle_playground/js/index.js"] 
+  },
+  {
+    "tags" : "webGL canvas particles twoD",
+    "link" : "experiments/particle",
+    "img": "thumb/014_thumb.jpg" ,
+    "alt":"particle",
+    "title":"Particle",
+    "content":"random particles.",
+  "jsSRC" : ["experiments/particle/js/index.js"] 
+  },
+  {
+    "tags" : "webGL canvas twoD tweenjs timing",
+    "link" : "experiments/colored_spiral",
+    "img": "thumb/029_thumb.jpg" ,
+    "alt":"colored_spiral",
+     "title":"colored spiral",
+     "content":"click to change the easing function. spiral follows mouse.",
+   "jsSRC" : ["experiments/colored_spiral/js/index.js"]
+  },
+  {
+    "tags" : "webGL game canvas twoD timing collision_detection",
+    "link" : "experiments/snake",
+    "img": "thumb/028_thumb.jpg" ,
+    "alt":"snake",
+     "title":"snake",
+     "content":"simple snake example.",
+     "jsSRC" : ["experiments/snake/js/index.js"]
+  }
+]
+}

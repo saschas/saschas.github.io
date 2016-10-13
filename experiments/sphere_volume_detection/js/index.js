@@ -8,6 +8,12 @@ function getRandomColor() {
     return color;
 }
 
+// Check of point is in radius
+function pointInCircle(point,target, radius) {
+  var distsq = (point.x - target.x) * (point.x - target.x) + (point.y - target.y) * (point.y - target.y) + (point.z - target.z) * (point.z - target.z);
+  // returns bool , distance to target origin 
+  return [distsq <= radius * radius * radius,distsq];
+}
 
 function randNum(min,max,bool){
   var num = Math.floor(Math.random()*max) + min;
@@ -19,7 +25,7 @@ num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
 
 var $fogColor = 0x00000;
 var objects_to_update = [];
-
+var controls;
 //________________________________ Scene
 var scene = new THREE.Scene();
     //scene.fog = new THREE.FogExp2( $fogColor, 0.085 );
@@ -42,17 +48,12 @@ var renderer = new THREE.WebGLRenderer({ antialias: true,alpha: true }); /// { a
 document.body.appendChild( renderer.domElement );
 
 
-//________________________________  Resize
-window.onresize = function(){
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize( window.innerWidth, window.innerHeight );
-}
+
 //________________________________ Controls
 
  controls = new THREE.OrbitControls( camera );
  controls.damping = 0.2;
- controls.addEventListener( 'change', render );
+ //controls.addEventListener( 'change', render );
  //
  controls.maxPolarAngle = Math.PI/2;
  controls.target.set( 0,0,0 );
@@ -182,6 +183,7 @@ var time = 0;
 var render = function (time) { 
   requestAnimationFrame( render );
   attractor.update(time);
+  controls.update();
   animation(time);
   renderer.render(scene, camera);
 };
@@ -232,18 +234,14 @@ function animation(time){
       å.main.geometry.verticesNeedUpdate= true;    
       
     }
-  }
-  
+  } 
 }
 
-
-
-//________________________________ HELPER FCTs
-// Check of point is in radius
-function pointInCircle(point,target, radius) {
-  var distsq = (point.x - target.x) * (point.x - target.x) + (point.y - target.y) * (point.y - target.y) + (point.z - target.z) * (point.z - target.z);
-  // returns bool , distance to target origin 
-  return [distsq <= radius * radius * radius,distsq];
+//________________________________  Resize
+window.onresize = function(){
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
 }
 //////////////////////////////////////////
 render(time);

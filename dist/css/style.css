@@ -1201,12 +1201,12 @@ footer {
 }
 @media screen and (max-width: 400px) {
   .content {
-    min-height: inherit;
+    min-height: initial !important;
   }
 
   .single {
     width: 100%;
     margin-bottom: 1em;
-    padding: 0 !important;
+    padding: 0;
   }
 }

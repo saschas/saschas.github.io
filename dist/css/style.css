@@ -697,6 +697,7 @@ iframe {
 aside.info {
   width: 320px;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   z-index: 1;
 }
 
@@ -1206,5 +1207,6 @@ footer {
   .single {
     width: 100%;
     margin-bottom: 1em;
+    padding: 0 !important;
   }
 }

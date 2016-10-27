@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+*{
+	box-sizing:border-box;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+body{
+	margin:0;
+	background:#000;
+	overflow:hidden;
+	font-family: 'VT323', monospace;
+	height: 100vh;
+}
+
+
+canvas {
+    position: absolute;
+    max-width:100%;
+    max-height: 100%;
+    left:0;
+    width:100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.pong{
+	display:none;
+}
+
+$main-color: #2ca3ff;
+
+@mixin textGlow($spread){
+  color : $main-color;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  text-shadow: 0px 0px $spread $main-color;
+
+}
+
+.pongGame{
+    z-index : 1;
+}
+.holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 2;
+    box-shadow: inset 0 0 10px 5px $main-color;
+
+    &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-dodge;
+    background: #a2a2a2;
+    z-index: 99999;
+    pointer-events: none;
+    }
+
+    &.inGame{
+      display: none;
+    }
+}
+
+.title {
+    @include textGlow(12px);
+    font-size: 11em;
+}
+
+.element-holder-input {
+    margin-bottom: 1em;
+}
+input[type="radio"]{
+  position:absolute;
+  opacity: 0;
+}
+
+label {
+  @include textGlow(5px);
+    display: block;
+    width:250px;
+    margin: auto;
+    color: $main-color;
+    font-size: 4em;
+    padding-bottom: 5px;
+    position:relative;
+}
+
+input[type="radio"]:checked+label{
+  &:after{
+    content: '';
+    display: block;
+    width:100%;
+    position:absolute;
+    height: 0px;
+    background: $main-color;
+    box-shadow: 0 0 6px 5px $main-color;
+    bottom: -3px;
+  }
+} 
+
+.button-mute {
+  position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    text-indent: -999px;
+    overflow: hidden;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../assets/textures/mute.png);
+    top: 0;
+    left: 0px;
+    background-position: 0;
+    background-size: auto 100%;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &.selected{
+    &:before{
+      background-position: 50px;
+    }
+  }
+}
+
+
+.element-button{
+  @include textGlow(6px);
+  border:0;
+  background:transparent;
+}
+
+.button-player{
+  
+  font-size: 4em;
+  display:block;
+  margin: auto;
+  text-align: center;
+
+}
+
+.start .button-continue,
+.start .button-restart{
+  display: none;
+}
+
+.start .button-play{
+  margin-right:0;
+}
+
+
+.playGame .button-play{
+  display: none;
+}
+.button-play,.button-continue,.button-restart{
+  
+  font-size: 4em;
+  display:inline-block;
+  margin: auto;
+  text-align: center;
+  
+  margin-top:2em;
+  text-transform: uppercase;
+  background: $main-color;
+  color : #000;
+  box-shadow: 0 0 10px 5px $main-color;
+      margin-right: 1em;
+}
+
+.menu-holder {
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    z-index: 3;
+}

@@ -64,10 +64,15 @@ function createIframe(url,src){
       iFrame.style.background = "#fff";
       iFrame.setAttribute("id","framer");
       framer = iFrame;
+
+      
+      // iFrame.addEventListener('click',function (event) {
+      //   window.focus();
+      // })
     
       iFrameHolder.appendChild(iFrame);
       iFrameHolder.appendChild(closer);
-
+      iFrame.contentWindow.focus();
       setFrameSize(iFrameHolder,iFrame);
 
       if(old_frame != null){

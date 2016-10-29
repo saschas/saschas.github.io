@@ -1,6 +1,14 @@
 {"data":[
   
   {
+    "tags" : "autumn leaf",
+    "link" : "experiments/autumn/index.html",
+    "img": "thumb/054_thumb.jpg",
+    "alt": "autumn",
+    "title":"Autumn",
+    "content":"Floating Leaves.",
+    "jsSRC" : ["experiments/autumn/assets/js/main.js"] 
+    },{
     "tags" : "pong game",
     "link" : "experiments/pong/index.html",
     "img": "thumb/053_thumb.jpg",

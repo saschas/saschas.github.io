@@ -3,31 +3,72 @@
 	Basic Setup
 */
 //(function(){
-
-//__________ Variables
-
-function hashCode(s){
-  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
-}
-function isInRange(checker,min, max) {
-    return (checker >= min && checker <= max);
-};
-
-
-var canvas = document.createElement('canvas');
-canvas.width = 1024;
-canvas.height = 1024;
-canvas.classList.add("pong");
-
-
-
-
-var c = canvas.getContext("2d");
+var main_color = 0x000000;
+var time = 0;
+var canvas_height = window.innerHeight;
+var canvas_width = window.innerWidth;
+var floor;
 var screenSize = {
   x : 1024,
   y : 468
 }
+var postprocessing = {};
+var scene,renderer,controls;
+var texture;
+var playBox, rePlayBox;
+var explosions = [];
+var bounces = [];
 
+var assets = {
+  floor : {},
+  rohr : {},
+  screen : {},
+  sounds : {}
+}
+var gameOptions = {
+  playing : false,
+  audio : false,
+  playerCount : 1,
+  playSelect : false,
+  menuIndex : 0,
+  menuMax : 2,
+  alreadyPlayed : false,
+  mute : false,
+  loaded : false
+}
+
+var keyCode = {
+  player1 : {
+    up : false,
+    down : false,
+    left : false,
+    right : false
+  },
+  player2 : {
+    up : false,
+    down : false,
+    left : false,
+    right : false
+  }
+}
+var keyMap = {
+  37 : false,
+  38 : false,
+  39 : false,
+  40 : false,
+  65 : false,
+  68 : false,
+  83 : false,
+  87 : false,
+  //space / esc
+  32 : false,
+  27 : false
+}
+
+var menu = {
+  title : "PONG",
+  playTitle : "PLAY"
+}
 
 var player = {
   a : {
@@ -101,47 +142,63 @@ var ball = {
   }
 
 }
-var main_color = 0x000000;
-var time = 0;
-var canvas_height = window.innerHeight;
-var canvas_width = window.innerWidth;
-var floor;
+//__________ HelperFunctions
 
-var scene,renderer,controls;
-var texture;
-var playBox, rePlayBox;
-var manager = new THREE.LoadingManager();
-manager.onProgress = function ( item, loaded, total ) {
-
-  console.log( item, loaded, total );
-
-  if(loaded == total){
-    window.scrollTo(0, 1);
-    init();
-  }
+function hashCode(s){
+  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);              
+}
+function isInRange(checker,min, max) {
+    return (checker >= min && checker <= max);
 };
+function wrapTexture(tex,wrapSize){
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set( wrapSize,wrapSize);
+}
+
+function loaderBar(parent){
+  var loadEl = document.createElement('div');
+      loadEl.classList.add('loader');
+
+  var loadInner = document.createElement('div');
+      loadInner.classList.add('loadInner');
+
+    loadEl.appendChild(loadInner);
+  
+  parent.appendChild(loadEl);
+
+  this.update = function(progress){
+    loadInner.style.width = progress + "%";
+  }
+  this.remove = function(){
+    loadEl.parentElement.removeChild(loadEl);
+  }
+}
+
+
+//__________ Loader
+var manager = new THREE.LoadingManager();
+    manager.onProgress = function ( item, loaded, total ) {
+    loaderBarEl.update(loaded / total * 100 );
+      if(loaded == total){
+        gameOptions.loaded = true;
+        loaderBarEl.remove();
+        init();
+      }
+    };
 
 var loader = new THREE.JSONLoader(manager);
 var textureLoader = new THREE.TextureLoader(manager);
-var postprocessing = {};
 
-
-var gameOptions = {
-  playing : false,
-  audio : false,
-  playerCount : 1,
-  playSelect : false,
-  menuIndex : 0,
-  menuMax : 2,
-  alreadyPlayed : false,
-  mute : false
-}
-
-var menu = {
-  title : "PONG",
-  playTitle : "PLAY"
-}
-
+var canvas = document.createElement('canvas');
+    canvas.width = 1024;
+    canvas.height = 1024;
+    canvas.classList.add("pong");
+    document.body.appendChild(canvas);
+var c = canvas.getContext("2d");
+    c.fillStyle = '#2ca3ff';
+    c.strokeStyle = '#2ca3ff';
+    c.font="60px VT323";
+//___________________________________________________ UI
 
 function createElement(opt){
   var elHolder = null;
@@ -171,8 +228,6 @@ function createElement(opt){
     el.classList.add(opt.classer);
   }
   
-  
-
   if("cb" in opt){
     el.addEventListener(opt.cbType,function (event) {
       opt.cb(event);
@@ -214,6 +269,7 @@ var playerForm = createElement({
 
 menuHolder.appendChild(playerForm);
 
+
 playerForm.appendChild(createElement({
   type : 'input',
   inputType : 'radio',
@@ -228,6 +284,8 @@ playerForm.appendChild(createElement({
     console.log(gameOptions.playerCount);
   }
 }));
+
+
 
 playerForm.appendChild(createElement({
   type : 'input',
@@ -275,21 +333,27 @@ menuHolder.appendChild(createElement({
     gameOptions.playing = true;  }
 }));
 
-menuHolder.appendChild(createElement({
+
+var playerButton = createElement({
   type : 'button',
   classer : 'button-play',
   cbType : 'click',
   content: "Play",
   cb : function (event) {
+    if(gameOptions.loaded){
+      holder.classList.add('inGame');
 
-    holder.classList.add('inGame');
+      holder.classList.remove('start');
+      holder.classList.add('playGame');
 
-    holder.classList.remove('start');
-    holder.classList.add('playGame');
+      gameOptions.playing = true;  
+    }
+  }
+});
+menuHolder.appendChild(playerButton);
 
-    gameOptions.playing = true;  }
-}));
 
+var loaderBarEl = new loaderBar(playerButton); 
 
 menuHolder.appendChild(createElement({
   type : 'button',
@@ -309,6 +373,7 @@ menuHolder.appendChild(createElement({
   document.body.appendChild(holder);
 
 
+//___________________________________________________ Load Assets
 var concrete_tex = textureLoader.load("assets/textures/concrete.jpg");
 var concrete_tex_norm = textureLoader.load("assets/textures/concrete_NRM.jpg");
 var concrete_tex_aoMap = textureLoader.load("assets/textures/concrete_OCC.jpg");
@@ -318,20 +383,6 @@ var rohr_albedo = textureLoader.load("assets/textures/rohr_albedo.jpg");
 var rohr_metallic = textureLoader.load("assets/textures/rohr_metallic.jpg");
 var rohr_roughness = textureLoader.load("assets/textures/rohr_roughness.jpg");
 var rohr_normal = textureLoader.load("assets/textures/rohr_normal.jpg");
-var assets = {
-  floor : {},
-  rohr : {},
-  screen : {},
-  sounds : {},
-  menuTexture : {
-    keyboard_arrow : new Image(),
-    keyboard_wasd : new Image()
-  }
-}
-
-assets.menuTexture.keyboard_arrow.src = 'assets/textures/keyboard_arrow.png';
-assets.menuTexture.keyboard_wasd.src = 'assets/textures/keyboard_wasd.png';
-
 
 loader.load('assets/json/floor.json',function (geometry,material) {
   assets.floor.geometry= geometry;
@@ -348,7 +399,7 @@ loader.load('assets/json/screen.json',function (geometry,material) {
   assets.screen.material= material;
 });
 
-
+//___________________________________________________ Load Sound Assets
 var bufferLoader;
 window.AudioContext = window.AudioContext||window.webkitAudioContext;
 var audioContext = new AudioContext();
@@ -396,10 +447,44 @@ function playSound(buffer,loop) {
   }
 }
 
+//___________________________________________________ Init
 
-function initPostprocessing(camera) {
+function init(){
+
+  console.log("init");
+  //__________ scene
+  scene = new THREE.Scene();
+  //__________ camera
+  var camera = new THREE.PerspectiveCamera( 55, canvas_width/canvas_height, 0.1, 1000 );
+
+    camera.position.set(10,4,-3);
+  	scene.add(camera);
+  //__________ renderer
+
+  renderer = new THREE.WebGLRenderer({ 
+    alpha: true,
+    antialias:true
+  });
+  renderer.setSize( canvas_width, canvas_height );
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.setClearColor(main_color,1);
+  renderer.domElement.classList.add('pongGame');
+  
+  document.body.appendChild( renderer.domElement );
+
+  //__________ resize
+
+  window.onresize = function(){
+    canvas_height = window.innerHeight;
+    canvas_width = window.innerWidth;
+    camera.aspect = canvas_width / canvas_height;
+    camera.updateProjectionMatrix();
+    renderer.setSize( canvas_width, canvas_height );
+  }
+//_____________  Post Effects
+
   var renderPass = new THREE.RenderPass( scene, camera );
-
   var bokehPass = new THREE.BokehPass( scene, camera, {
     focus:    1.,
     aperture: 0.15,
@@ -444,50 +529,7 @@ function initPostprocessing(camera) {
 
   postprocessing.composer = composer;
   postprocessing.bokeh = bokehPass;
-
-}
-
-
-function wrapTexture(tex,wrapSize){
-  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set( wrapSize,wrapSize);
-}
-
-function init(){
-  //__________ scene
-  scene = new THREE.Scene();
-  //__________ camera
-  var camera = new THREE.PerspectiveCamera( 55, canvas_width/canvas_height, 0.1, 1000 );
-
-    camera.position.set(10,4,-3);
-  	scene.add(camera);
-  //__________ renderer
-
-  renderer = new THREE.WebGLRenderer({ 
-    alpha: true,
-    antialias:true
-  });
-  renderer.setSize( canvas_width, canvas_height );
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  renderer.setClearColor(main_color,1);
-  renderer.domElement.classList.add('pongGame');
-  
-  document.body.appendChild( renderer.domElement );
-
-  //__________ resize
-
-  window.onresize = function(){
-    canvas_height = window.innerHeight;
-    canvas_width = window.innerWidth;
-    camera.aspect = canvas_width / canvas_height;
-    camera.updateProjectionMatrix();
-    renderer.setSize( canvas_width, canvas_height );
-  }
-
-
-
-  initPostprocessing(camera);
+  //initPostprocessing(camera);
 
 
   //__________ controls
@@ -585,7 +627,7 @@ var d = 100;
       // scene.add(shadowHelper);
 
 
-  //__________ cubes
+  //__________ Floor
 
   wrapTexture(concrete_tex,8);
   wrapTexture(concrete_tex_norm,8);
@@ -615,6 +657,7 @@ var d = 100;
 
   };
 
+  //__________ Rohr
 
   wrapTexture(rohr_albedo,10);
   wrapTexture(rohr_metallic,10);
@@ -639,7 +682,6 @@ var d = 100;
     });
 
     
-
     material[1] = new THREE.MeshStandardMaterial({
       color : 0xffffff,
       emissive : 0x666666
@@ -653,6 +695,9 @@ var d = 100;
     rohr.castShadow = true;
     scene.add(rohr);
   };
+
+
+  //__________ Screen
  
   texture = new THREE.Texture(canvas);
 
@@ -677,8 +722,6 @@ var d = 100;
 
     }
 
-
-
   createFloor(assets.floor.geometry,assets.floor.material);
   createRohr(assets.rohr.geometry,assets.rohr.material);
   createScreen(assets.screen.geometry,assets.screen.material);
@@ -688,7 +731,7 @@ var d = 100;
 }//init();
 
 
-
+//___________________________________________________ Post Effects
 function Explosion(pos,dir) {
   this.count = 50;
   this.isActive = true;
@@ -804,17 +847,6 @@ function Bounce(pos,dir) {
 }
 
 
-
-
-
-var explosions = [];
-var bounces = [];
-
-  c.fillStyle = '#2ca3ff';
-  c.strokeStyle = '#2ca3ff';
-  c.font="60px VT323";
-
-
   c.update = function (t) {
     this.clearRect(0,0,1024,1024);
 
@@ -853,8 +885,8 @@ var bounces = [];
 
 
       //update player
-      ball.pos.x += ball.vel.x * ball.speed.x * ball.dir.x ;//+ (ball.spin.x * ball.dir.x);
-      ball.pos.y += ball.vel.y * ball.speed.y * ball.dir.y ;//+ (ball.spin.y * ball.dir.y);
+      ball.pos.x += ball.vel.x * ball.speed.x * ball.dir.x ;
+      ball.pos.y += ball.vel.y * ball.speed.y * ball.dir.y ;
 
 
     }
@@ -898,7 +930,6 @@ var bounces = [];
     //check ball bounce Right
     //vertical check
     if( isInRange(ball.pos.y , (player.b.pos.y - (player.b.size.y / 2)), (player.b.pos.y + (player.b.size.y / 2)) )){
-
       if(isInRange(ball.pos.x + ball.size.x/2,player.b.pos.x,player.b.pos.x + player.b.size.x ) ){
             playSound(assets.sounds.blub,false);
             
@@ -919,10 +950,8 @@ var bounces = [];
 
     //check ball bounce Left
     if( isInRange(ball.pos.y , (player.a.pos.y - (player.a.size.y / 2)), (player.a.pos.y + (player.a.size.y / 2)) )){
-
       if(isInRange(ball.pos.x - ball.size.x/2 , player.a.pos.x , player.a.pos.x + player.a.size.x) ){
-     // if( ball.pos.x - ball.size.x/2 <= player.a.pos.x + player.a.size.x ){
-
+     
           playSound(assets.sounds.blub,false);
 
           player.a.bounce.multiplier = 5;
@@ -948,7 +977,6 @@ var bounces = [];
       }else{
         side = 1;
       }
-
 
       playSound(assets.sounds.dip,false);
       explosions.push(new Explosion({
@@ -978,7 +1006,8 @@ var bounces = [];
     });
   }
 
-document.body.appendChild(canvas);
+
+
 
 function respawn(){
   
@@ -1013,22 +1042,9 @@ function respawn(){
 
 
 
-var keyCode = {
-  player1 : {
-    up : false,
-    down : false,
-    left : false,
-    right : false
-  },
-  player2 : {
-    up : false,
-    down : false,
-    left : false,
-    right : false
-  }
-}
-function handlePlayer() {
 
+
+function handlePlayer() {
   //Player 1
 
   if(keyCode.player1.left){
@@ -1062,51 +1078,19 @@ function handlePlayer() {
 }
 
 
-window.addEventListener('keydown',function(event) {
+function handleKeyMap(){
 
-  console.log(event.keyCode);
+  keyCode.player1.left = keyMap[37];
+  keyCode.player1.right = keyMap[39];
+  keyCode.player1.up = keyMap[38];
+  keyCode.player1.down = keyMap[40];
 
-  //tab
-  if(event.keyCode == 9 && !gameOptions.playing){
-    
-    gameOptions.menuIndex = gameOptions.menuIndex < gameOptions.menuMax ? 0 : gameOptions.menuIndex++;
+  keyCode.player2.left = keyMap[65];
+  keyCode.player2.right = keyMap[68];
+  keyCode.player2.up = keyMap[87];
+  keyCode.player2.down = keyMap[83];
 
-  }
-
-  if(event.keyCode == 37&& !keyCode.player1.left){
-    keyCode.player1.left = true;
-  }
-  if(event.keyCode == 39&& !keyCode.player1.right){
-    keyCode.player1.right = true;
-  }
-  if(event.keyCode == 38 && !keyCode.player1.up){
-    player.b.vel.y = 1;
-    keyCode.player1.up = true;
-  }
-  if(event.keyCode == 40 && !keyCode.player1.down){
-    player.b.vel.y = 1;
-    keyCode.player1.down = true;
-  }
-
-
-  if(event.keyCode == 65&& !keyCode.player2.left){
-    keyCode.player2.left = true;
-  }
-  if(event.keyCode == 68&& !keyCode.player2.right){
-    keyCode.player2.right = true;
-  }
-  if(event.keyCode == 87 && !keyCode.player2.up){
-    player.a.vel.y = 1;
-    keyCode.player2.up = true;
-  }
-  if(event.keyCode == 83 && !keyCode.player2.down){
-    player.a.vel.y = 1;
-    keyCode.player2.down = true;
-  }
-
-
-  //playing
-  if(event.keyCode == 32 || event.keyCode == 27){
+  if(keyMap[32] || keyMap[27]){
 
     if( gameOptions.playing){
       gameOptions.playing = !gameOptions.playing;
@@ -1116,45 +1100,17 @@ window.addEventListener('keydown',function(event) {
   }
 
 
+}
 
+
+
+window.addEventListener('keydown',function(event) {
+  keyMap[event.keyCode] = true;
   
-
 });
 
 window.addEventListener('keyup',function(event) {
-
-  controls.enabled = true;
-
-  if(event.keyCode == 37){
-    keyCode.player1.left = false;
-  }
-  if(event.keyCode == 39){
-    keyCode.player1.right = false;
-  }
-  if(event.keyCode == 38){
-    keyCode.player1.up = false;
-  }
-  if(event.keyCode == 40){
-    keyCode.player1.down = false;
-  }
-
-
-  if(event.keyCode == 65){
-    keyCode.player2.left = false;
-  }
-  if(event.keyCode == 68){
-    keyCode.player2.right = false;
-  }
-  if(event.keyCode == 87){
-    keyCode.player2.up = false;
-  }
-  if(event.keyCode == 83){
-    keyCode.player2.down = false;
-  }
-
-
-
-
+ keyMap[event.keyCode] = false;
 });
 
 
@@ -1166,9 +1122,9 @@ var render = function (time) {
   animation(time);
 
   controls.update();
+  handleKeyMap();
   handlePlayer();
   
-//  renderer.render(scene, camera);
   postprocessing.composer.render( 0.1 );
 };
 
@@ -1178,22 +1134,18 @@ var render = function (time) {
 function animation(time){
   texture.needsUpdate = true;
 
-  player.a.vel.x *= .9;
-  player.b.vel.x *= .9;
 
   player.a.bounce.multiplier *= .99;
   player.b.bounce.multiplier *= .99;
 
-
+  player.a.vel.x *= .9;
+  player.b.vel.x *= .9;
   player.a.vel.y *= .9;
   player.b.vel.y *= .9;
   
   c.update(time);
   
 };
-
-//__________
-
 
 
 

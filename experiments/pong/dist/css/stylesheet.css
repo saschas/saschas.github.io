@@ -27,6 +27,26 @@ canvas {
   z-index: 9999;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  z-index: 4;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.loadInner {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #2ca3ff;
+}
+
 .pong {
   display: none;
 }
@@ -67,6 +87,7 @@ canvas {
   font-family: 'VT323', monospace;
   text-shadow: 0px 0px 12px #2ca3ff;
   font-size: 11em;
+  margin-bottom: 0;
 }
 
 .element-holder-input {
@@ -146,6 +167,7 @@ input[type="radio"]:checked + label:after {
   display: block;
   margin: auto;
   text-align: center;
+  position: relative;
 }
 
 .start .button-continue,
@@ -162,11 +184,12 @@ input[type="radio"]:checked + label:after {
 }
 
 .button-play, .button-continue, .button-restart {
+  position: relative;
   font-size: 4em;
   display: inline-block;
   margin: auto;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   text-transform: uppercase;
   background: #2ca3ff;
   color: #000;

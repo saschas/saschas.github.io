@@ -8,6 +8,14 @@
     "title":"Fractal Shader",
     "content":"Fractal CustomShaderMaterial for threejs.",
     "jsSRC" : ["experiments/fractal/dist/js/main.js"] 
+    }, {
+    "tags" : "piano",
+    "link" : "experiments/piano/index.html",
+    "img": "thumb/056_thumb.jpg",
+    "alt": "piano",
+    "title":"Piano",
+    "content":"Fully functional piano plays Ludovico Einaudi - Una Mattina.",
+    "jsSRC" : ["experiments/piano/dist/js/main.js"] 
     },{
     "tags" : "autumn leaf",
     "link" : "experiments/autumn/index.html",

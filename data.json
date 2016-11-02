@@ -1,6 +1,14 @@
 {"data":[
   
   {
+    "tags" : "fractal shader",
+    "link" : "experiments/fractal/index.html",
+    "img": "thumb/055_thumb.jpg",
+    "alt": "fractal shader",
+    "title":"Fractal Shader",
+    "content":"Fractal CustomShaderMaterial for threejs.",
+    "jsSRC" : ["experiments/fractal/dist/js/main.js"] 
+    },{
     "tags" : "autumn leaf",
     "link" : "experiments/autumn/index.html",
     "img": "thumb/054_thumb.jpg",

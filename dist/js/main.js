@@ -10223,6 +10223,8 @@ function setFrameSize(holder,f){
 window.onresize = function(){
   if(framer != null){
     setFrameSize(old_frame,framer);
+  }else{
+    setFrameSize(old_frame,document.getElementById('framer'));
   }
 }
 

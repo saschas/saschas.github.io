@@ -1,6 +1,14 @@
 {"data":[
   
   {
+    "tags" : "pointcloud canvas",
+    "link" : "experiments/pointCloud/index.html",
+    "img": "thumb/057_thumb.jpg",
+    "alt": "pointCloud",
+    "title":"PointCloud",
+    "content":"Dynamic points in radius.",
+    "jsSRC" : ["experiments/pointCloud/dist/js/pointCloud.js"] 
+    }, {
     "tags" : "fractal shader",
     "link" : "experiments/fractal/index.html",
     "img": "thumb/055_thumb.jpg",

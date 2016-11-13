@@ -1,6 +1,14 @@
 {"data":[
   
   {
+    "tags" : "shuffle text",
+    "link" : "experiments/shuffleText/index.html",
+    "img": "thumb/058_thumb.jpg",
+    "alt": "shuffle_text",
+    "title":"Random Text Shuffle",
+    "content":"",
+    "jsSRC" : ["experiments/shuffleText/dist/js/main.js"] 
+    },{
     "tags" : "pointcloud canvas",
     "link" : "experiments/pointCloud/index.html",
     "img": "thumb/057_thumb.jpg",

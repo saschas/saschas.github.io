@@ -475,6 +475,14 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+p{
+  margin-bottom: 1em;
+}
+.social a {
+  display: block;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
 //____________________________
 
 iframe{
@@ -628,7 +636,7 @@ aside.info {
   overflow: hidden;
   background-image:url(../../ico_grid.png);
   background-size:auto 100%;
-  vertical-align: middle;
+  vertical-align: text-top;
   margin-right: 5px;
 
   &.mail{

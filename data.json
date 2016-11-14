@@ -1,6 +1,14 @@
 {"data":[
   
   {
+    "tags" : "Mandala",
+    "link" : "experiments/mandala/index.html",
+    "img": "thumb/059_thumb.jpg",
+    "alt": "mandala",
+    "title":"Mandala",
+    "content":"Draw your own Mandala and export it as PNG.",
+    "jsSRC" : ["experiments/mandala/dist/js/main.js"] 
+    },{
     "tags" : "shuffle text",
     "link" : "experiments/shuffleText/index.html",
     "img": "thumb/058_thumb.jpg",

@@ -633,26 +633,6 @@ span.CodeMirror-selectedtext {
   padding: 0 20px;
 }
 
-.closeSource {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  background: #ddd;
-  right: 10px;
-  top: 10px;
-  z-index: 9;
-  cursor: pointer;
-}
-.closeSource:after {
-  content: 'x';
-  display: block;
-  text-align: center;
-  line-height: 36px;
-  font-size: 24px;
-  color: #333;
-  font-family: monospace;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -690,18 +670,85 @@ iframe {
   top: 0;
 }
 
-.closer {
+button.disqus, button.closer, button.close-comments, .closeSource {
   position: absolute;
-  border: 0;
-  cursor: pointer;
-  right: 0;
-  width: 100px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.5);
-  bottom: 10px;
   right: 10px;
-  border: 1px solid #fff;
-  font-family: monospace;
+  bottom: 55px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  z-index: 9;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../../disqus_code.png);
+  background-size: auto 100%;
+  background-position: 0 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  opacity: .7;
+}
+button.disqus:hover, button.closer:hover, button.close-comments:hover, .closeSource:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+button.closer {
+  bottom: 10px;
+  background-position: -40px 0;
+}
+
+button.close-comments {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: -80px 0;
+  border: 0;
+}
+
+.closeSource {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: 40px 0;
+}
+
+aside.comments {
+  position: absolute;
+  width: 400px;
+  transform: translateX(-100%);
+  height: 100%;
+  left: 0;
+  padding-right: 40px;
+  overflow-y: scroll;
+  overflow-x: visible;
+  z-index: 9;
+  -webkit-overflow-scrolling: touch;
+  transition-duration: .25s;
+}
+aside.comments iframe {
+  position: relative !important;
+}
+aside.comments.open {
+  transform: translateX(0%);
+}
+
+div#disqus_thread {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background: #eee;
+  padding: 1em;
 }
 
 aside.info {

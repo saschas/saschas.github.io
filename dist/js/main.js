@@ -9999,9 +9999,12 @@ var old_frame = null;
 var framer = null;
 var opt = {
   data : null,
-  size : "small"
-}
-
+  size : "small",
+  commentsScriptLoaded : false,
+  commentsOpen : false,
+  commentsloaded : false
+};
+var disqus_config;
 
 function getData(url,callback,err){
 var req = new XMLHttpRequest();
@@ -10028,12 +10031,16 @@ getData('data.json',function(d){
 
 function handler(event) {
   event.preventDefault(event);
-  window.location.hash = event.target.outerText.split(' ').join('_');
+  event.stopPropagation(event);
 
-  old_frame = createIframe(this.href,this._own[0]);
+  window.location.hash = this._hash;
+
+  old_frame = createIframe(this.href,this._own[0],this._hash);
 }
 
-function createIframe(url,src){
+function createIframe(url,src,hash){
+  opt.commentsOpen = false;
+  opt.commentsloaded = false;
 
   var iFrameHolder = document.createElement("div");
       iFrameHolder._own = src;
@@ -10041,7 +10048,67 @@ function createIframe(url,src){
   var closer = document.createElement("button");
       closer.innerHTML = "view source";
       closer.classList.add("closer");
+      closer.title = "view source";
       closer.addEventListener("click",viewSource.bind(iFrameHolder));
+
+  var disqusButton = document.createElement('button');
+      disqusButton.innerHTML = 'comments';
+      disqusButton.title = "comments";
+      disqusButton.classList.add('disqus');
+
+  var closeDisqus = document.createElement('button');
+      closeDisqus.classList.add('close-comments');
+      closeDisqus.innerHTML = "close comments";
+
+  var aside = document.createElement('aside');
+      aside.classList.add('comments')
+  var commentsThread = document.createElement('div');
+      commentsThread.setAttribute('id', 'disqus_thread');
+        iFrameHolder.appendChild(aside);
+
+      aside.appendChild(commentsThread);
+      aside.appendChild(closeDisqus);
+        
+      //set disqus_options on start iframe
+      disqus_config = function () {      
+        this.page.url = url;
+        this.page.identifier = hash;  
+        this.page.title = hash.replace('_', ' ');
+      };
+
+      function toggleComments(){
+        aside.classList.toggle("open");
+        disqusButton.classList.toggle("open");
+
+
+        if(!opt.commentsOpen && !opt.commentsloaded){
+          opt.commentsloaded = true;
+          if(!opt.commentsScriptLoaded){
+
+            //disqus
+            var d = document, 
+                s = d.createElement('script');
+                s.src = '//saschasgithubio.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                opt.commentsScriptLoaded = true;
+          }else{
+            DISQUS.reset({
+              reload: true,
+              config: function () {  
+                this.page.url = url;
+                this.page.identifier = hash;  
+                this.page.title = hash.replace('_', ' ');
+              }
+            });
+          }
+        }
+
+        opt.commentsOpen = !opt.commentsOpen;
+      }
+      //toggle sidebar with comments
+      disqusButton.addEventListener('click',toggleComments);
+      closeDisqus.addEventListener('click',toggleComments);
 
       iFrameHolder.classList.add("iFrameHolder");
       iFrameHolder.style.position = "fixed";
@@ -10055,11 +10122,9 @@ function createIframe(url,src){
       framer = iFrame;
 
       
-      // iFrame.addEventListener('click',function (event) {
-      //   window.focus();
-      // })
     
       iFrameHolder.appendChild(iFrame);
+      iFrameHolder.appendChild(disqusButton);
       iFrameHolder.appendChild(closer);
       iFrame.contentWindow.focus();
       setFrameSize(iFrameHolder,iFrame);
@@ -10135,6 +10200,8 @@ function handleData(d){
   opt.data.forEach(function(d,index) {
     var article = document.createElement("button");
         article.classList.add("single");
+        article.title = d.title;
+
 
     var contHolder = document.createElement("div");
         contHolder.classList.add("content");
@@ -10171,18 +10238,22 @@ function handleData(d){
       d.linkIMG = linkIMG;
       d.hash = d.title.split(' ').join('_');
       dataHolder.appendChild(article);
+      linkIMG._hash = d.hash;
+      link._hash = d.hash;
+
+
+
   });
 
   var hash = window.location.hash.replace('#','');
   var hashIndex = 0;
-
   opt.data.forEach(function(d,index){
     if(hash == d.hash){     
       hashIndex = index;
     }
   });
 
-  old_frame = createIframe(d.data[hashIndex].link,d.data[hashIndex].jsSRC);
+  old_frame = createIframe(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
 
   infoPanel.appendChild(dataHolder);
 }
@@ -10216,8 +10287,6 @@ function setFrameSize(holder,f){
   holder.style.height = window.innerHeight + "px";
   f.style.width = window.innerWidth - infoPanel.offsetWidth + "px";
   f.style.height = window.innerHeight + "px";
-    
-  
 }
 
 window.onresize = function(){

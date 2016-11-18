@@ -651,6 +651,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 p {
   margin-bottom: 1em;
 }
@@ -711,6 +716,17 @@ button.close-comments {
   border: 0;
 }
 
+span.disqus-comment-count {
+  width: 15px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  background: #FF9B19;
+  right: 0px;
+  top: 5px;
+  border-radius: 3px;
+}
+
 .closeSource {
   position: fixed;
   width: 40px;
@@ -742,6 +758,9 @@ aside.comments iframe {
 aside.comments.open {
   transform: translateX(0%);
 }
+aside.comments::-webkit-scrollbar {
+  display: none;
+}
 
 div#disqus_thread {
   width: 100%;
@@ -756,6 +775,9 @@ aside.info {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
+}
+aside.info::-webkit-scrollbar {
+  display: none;
 }
 
 #holder {
@@ -1249,6 +1271,30 @@ footer {
     padding: 0;
     margin: 0;
     margin-bottom: 5px;
+  }
+}
+@-moz-document url-prefix() {
+  aside.info {
+    width: 320px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .aside-info-inner {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-right: -15px;
+  }
+
+  aside.comments {
+    overflow: hidden;
+  }
+
+  div#disqus_thread {
+    overflow: auto;
+    height: 100vh;
+    margin-right: -15px;
   }
 }
 @media screen and (max-width: 600px) {

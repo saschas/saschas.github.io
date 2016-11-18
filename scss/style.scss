@@ -456,6 +456,12 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.wrapper{
+  position:relative;
+  overflow: hidden;
+}
+
+
 p{
   margin-bottom: 1em;
 }
@@ -515,7 +521,16 @@ button.close-comments {
     background-position:-80px 0;
     border:0;
 }
-
+span.disqus-comment-count {
+    width: 15px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    background: $main_headline-color;
+    right: 0px;
+    top: 5px;
+    border-radius: 3px;
+}
 .closeSource {
   position: fixed;
   width: 40px;
@@ -546,7 +561,9 @@ aside.comments {
 
   &.open{
   transform:translateX(0%);
-
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -563,6 +580,10 @@ aside.info {
   overflow-y:scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 
@@ -832,6 +853,9 @@ nav {
     font-size: 1.4em;
     line-height: 1.4em;
   }
+
+  
+
 }
 
 #share{
@@ -1010,6 +1034,33 @@ footer {
       
     }
   }
+}
+
+
+
+
+@-moz-document url-prefix() {
+  aside.info {
+      width: 320px;
+      overflow: hidden;
+      z-index: 1;
+  }
+  .aside-info-inner {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-right: -15px;
+  }
+  
+  aside.comments{
+    overflow: hidden;
+  }
+  div#disqus_thread{
+    overflow: auto;
+    height: 100vh;
+    margin-right: -15px;
+  }
+
 }
 
 @media screen and (max-width: 600px){

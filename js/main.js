@@ -246,6 +246,8 @@ function handleData(d){
         link.addEventListener('click',function(event){
           event.preventDefault(event);
           singleExperiment.classList.add('open');
+
+          console.log(base_url + art.link);
           singleExperimentFrame.setAttribute('src',base_url + art.link );
         });
 

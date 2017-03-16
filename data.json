@@ -130,7 +130,7 @@
   },
   {
     "tags" : "webGL blender threejs mask threeD animation",
-    "link" : "experiments/traffic",
+    "link" : "experiments/traffic/index.html",
     "img": "thumb/041_thumb.jpg" ,
     "alt":"traffic",
     "title":"Traffic",
@@ -139,7 +139,7 @@
   },
   {
     "tags" : "webGL blender threejs skeletal threeD",
-    "link" : "experiments/jazz_nights",
+    "link" : "experiments/jazz_nights/index.html",
     "img": "thumb/039_thumb.jpg" ,
     "alt":"jazz nights",
     "title":"Jazz night",
@@ -148,7 +148,7 @@
   },
   {
     "tags" : "webGL blender threejs skeletal threeD",
-    "link" : "experiments/cycle_through_the_night",
+    "link" : "experiments/cycle_through_the_night/index.html",
     "img": "thumb/000_thumb.jpg" ,
     "alt":"cycle_through_the_night",
     "title":"Cylce through the night",
@@ -157,7 +157,7 @@
   },
   {
     "tags" : "webGL blender threejs material threeD",
-    "link" : "experiments/custom_shader_material",
+    "link" : "experiments/custom_shader_material/index.html",
     "img": "thumb/001_thumb.jpg" ,
     "alt":"custom_shader_material",
     "title":"CustomShader Material",
@@ -166,7 +166,7 @@
   },
   {
     "tags" : "webGL blender threejs skeletal threeD",
-    "link" : "experiments/minion_walkcycle",
+    "link" : "experiments/minion_walkcycle/index.html",
     "img": "thumb/002_thumb.jpg",
     "alt":"minion_walkcycle",
     "title":"Minion walkcycle",
@@ -175,7 +175,7 @@
   },
   {
     "tags" : "webGL threeD blender threejs particles",
-    "link" : "experiments/baseball_hit",
+    "link" : "experiments/baseball_hit/index.html",
     "img": "thumb/003_thumb.jpg" ,
     "alt":"baseball_hit",
     "title":"Baseball Hit",
@@ -184,7 +184,7 @@
   },
   {
     "tags" : "webGL threeD threejs follow_camera line extrude_geometry",
-    "link" : "experiments/rollercoaster_island",
+    "link" : "experiments/rollercoaster_island/index.html",
     "img": "thumb/004_thumb.jpg" ,
     "alt":"rollercoaster_island",
     "title":"Rollercoaster Island",
@@ -193,7 +193,7 @@
   },
   {
     "tags" : "webGL live_input threejs threeD video",
-    "link" : "experiments/transparent_video",
+    "link" : "experiments/transparent_video/index.html",
     "img": "thumb/005_thumb.jpg" ,
     "alt":"transparent_video",
     "title":"Transparent Video",
@@ -202,7 +202,7 @@
   },
   {
     "tags" : "webGL threejs threeD blender skeletal morph material video particle",
-    "link" : "experiments/playing_kid",
+    "link" : "experiments/playing_kid/index.html",
     "img": "thumb/006_thumb.jpg" ,
     "alt":"playing_kid",
     "title":"playing kid",
@@ -211,7 +211,7 @@
   },
   {
     "tags" : "webGL morph blender threejs threeD follow_camera",
-    "link" : "experiments/creepy_head",
+    "link" : "experiments/creepy_head/index.html",
     "img": "thumb/007_thumb.jpg" ,
     "alt":"creepy_head",
     "title":"creepy head",
@@ -220,7 +220,7 @@
   },
   {
     "tags" : "webGL threejs threeD blender skeletal",
-    "link" : "experiments/headstand",
+    "link" : "experiments/headstand/index.html",
     "img": "thumb/009_thumb.jpg" ,
     "alt":"headstand",
     "title":"headstand",
@@ -229,7 +229,7 @@
   },
   {
     "tags" : "webGL threejs threeD particles blender pointCloud",
-    "link" : "experiments/particle_island",
+    "link" : "experiments/particle_island/index.html",
     "img": "thumb/008_thumb.jpg" ,
     "alt":"particle_island",
     "title":"Particle Island",
@@ -238,7 +238,7 @@
   },
   {
     "tags" : "webGL threejs threeD collision_detection merged_geometry",
-    "link" : "experiments/sphere_volume_detection",
+    "link" : "experiments/sphere_volume_detection/index.html",
     "img": "thumb/010_thumb.jpg",
     "alt":"sphere_volume_detection",
     "title":"sphere volume detection",
@@ -247,7 +247,7 @@
   },
   {
     "tags" : "webGL particles audioBuffer audio canvas",
-    "link" : "experiments/visual_audiobuffer",
+    "link" : "experiments/visual_audiobuffer/index.html",
     "img": "thumb/015_thumb.jpg" ,
     "alt":"visual_audiobuffer",
     "title":"Visual AudioBuffer",
@@ -256,7 +256,7 @@
   },
   {
     "tags" : "webGL collision_detection audio oscillator click_event",
-    "link" : "experiments/oscillator",
+    "link" : "experiments/oscillator/index.html",
     "img": "thumb/018_thumb.jpg" ,
     "alt":"oscillator",
     "title":"Oscillator",
@@ -265,7 +265,7 @@
   },
   {
     "tags" : "webGL terrain audioBuffer audio threejs",
-    "link" : "experiments/visual_audio",
+    "link" : "experiments/visual_audio/index.html",
     "img": "thumb/032_thumb.jpg" ,
     "alt":"visual_audio",
     "title":"Visual Audio",
@@ -274,7 +274,7 @@
   },
   {
     "tags" : "webGL live_input twoD canvas audio",
-    "link" : "experiments/live_audio_input",
+    "link" : "experiments/live_audio_input/index.html",
     "img": "thumb/035_thumb.jpg" ,
     "alt":"live_audio_input",
     "title":"Live Audio input",
@@ -283,7 +283,7 @@
   },
    {
     "tags" : "webGL twoD canvas audio",
-    "link" : "experiments/audio_graph",
+    "link" : "experiments/audio_graph/index.html",
     "img": "thumb/040_thumb.jpg" ,
     "alt":"audio_graph",
     "title":"Audio Spectrum",
@@ -292,7 +292,7 @@
   },
   {
     "tags" : "webGL audio threejs live_input",
-    "link" : "experiments/audio_spectrum",
+    "link" : "experiments/audio_spectrum/index.html",
     "img": "thumb/033_thumb.jpg" ,
     "alt":"audio_spectrum",
     "title":"Audio Spectrum",
@@ -301,7 +301,7 @@
   },
   {
     "tags" : "webGL audio threejs live_input line",
-    "link" : "experiments/audio_as_driver",
+    "link" : "experiments/audio_as_driver/index.html",
     "img": "thumb/034_thumb.jpg" ,
     "alt":"audio_as_driver",
     "title":"Audio as driver",
@@ -310,7 +310,7 @@
   },
   {
     "tags" : "webGL canvas particles collision_detection twoD",
-    "link" : "experiments/particle_grid",
+    "link" : "experiments/particle_grid/index.html",
     "img": "thumb/011_thumb.jpg" ,
     "alt":"particle_grid",
     "title":"Particle Grid",
@@ -319,7 +319,7 @@
   },
   {
     "tags" : "webGL canvas particles collision_detection click_event twoD",
-    "link" : "experiments/particle_magnet",
+    "link" : "experiments/particle_magnet/index.html",
     "img": "thumb/012_thumb.jpg" ,
     "alt":"particle_magnet",
     "title":"Particle Magnet",
@@ -328,7 +328,7 @@
   },
   {
     "tags" : "webGL canvas particles playground twoD gravity",
-    "link" : "experiments/particle_playground",
+    "link" : "experiments/particle_playground/index.html",
     "img": "thumb/013_thumb.jpg" ,
     "alt":"particle_playground",
     "title":"Particle Playground",
@@ -337,7 +337,7 @@
   },
   {
     "tags" : "webGL canvas particles twoD",
-    "link" : "experiments/particle",
+    "link" : "experiments/particle/index.html",
     "img": "thumb/014_thumb.jpg" ,
     "alt":"particle",
     "title":"Particle",
@@ -346,7 +346,7 @@
   },
   {
     "tags" : "webGL canvas twoD tweenjs timing",
-    "link" : "experiments/colored_spiral",
+    "link" : "experiments/colored_spiral/index.html",
     "img": "thumb/029_thumb.jpg" ,
     "alt":"colored_spiral",
      "title":"colored spiral",
@@ -355,7 +355,7 @@
   },
   {
     "tags" : "webGL game canvas twoD timing collision_detection",
-    "link" : "experiments/snake",
+    "link" : "experiments/snake/index.html",
     "img": "thumb/028_thumb.jpg" ,
     "alt":"snake",
      "title":"snake",

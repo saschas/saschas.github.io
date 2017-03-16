@@ -956,7 +956,6 @@ article.tags {
 
 //____________________________
 article {
-  margin-bottom: 10px;
   width: 50%;
   display: inline-block;
   padding: 5px;
@@ -964,8 +963,18 @@ article {
   vertical-align: top;
   flex: 1;
   min-width: 200px;
+  transition-duration: .2s;
 
-
+  &:hover{
+    transform: scale(1.1);
+    transition-duration: .2s;
+    
+    img {
+      transition-duration: .2s;
+      box-shadow: 0 0 50px 0 rgba(0,0,0,.85);
+    }
+  }
+  
   h1{
     margin: .5em;
     margin-bottom: 0;
@@ -981,6 +990,8 @@ article {
   img{
     max-width: 100%;
     height:auto;
+    transition-duration: .2s;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0);
   }
 }
 
@@ -1212,8 +1223,8 @@ footer {
     width:80%;
     display: block;
     margin: auto;
+    margin-bottom: 10px;
     max-width: initial;
-    margin-bottom: 1em;
     padding:0;
   }
 }

@@ -91,6 +91,7 @@ function handleData(d){
           singleExperiment.classList.add('open');
 
           singleExperimentFrame.setAttribute('src',base_url + art.link );
+          singleExperimentFrame.contentWindow.focus();
         });
 
     var h1 = document.createElement('h1');
@@ -101,12 +102,12 @@ function handleData(d){
         img.src = art.img;
 
         link.appendChild(img);
-        link.appendChild(h1);
-if(art.content != ""){
-    var p = document.createElement('p');
-        p.innerHTML = art.content;
-        link.appendChild(p);
-}
+       // link.appendChild(h1);
+       // if(art.content != ""){
+       //     var p = document.createElement('p');
+       //         p.innerHTML = art.content;
+       //         link.appendChild(p);
+       // }
 
 
     article.appendChild(link);

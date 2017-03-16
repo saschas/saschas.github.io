@@ -1064,10 +1064,14 @@ aside#single-experiment {
   left: 0;
   background: rgba(0, 0, 0, 0.85);
   z-index: -1;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s; }
   aside#single-experiment.open {
     opacity: 1;
-    z-index: 9; }
+    z-index: 9;
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s; }
   aside#single-experiment button#close_single_experiment {
     padding: 5px 15px;
     margin: 10px;

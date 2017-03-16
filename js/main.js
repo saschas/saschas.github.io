@@ -17,6 +17,7 @@ var opt = {
 };
 var disqus_config;
 
+console.log('%c v_0.01' , 'font-weight: bold; color: #4caf50');
 
 function getData(url,callback,err){
 
@@ -47,15 +48,16 @@ function handler(event) {
   event.preventDefault(event);
   event.stopPropagation(event);
   window.location.hash = this._hash;
-  console.log('handler');
+
   old_frame = createIframe(this.href,this._own[0],this._hash);
 }
 
 function createIframe(url,src,hash){
 
-  console.log('createIframe',url)
+  //url.replace('http', 'https');
   opt.commentsOpen = false;
   opt.commentsloaded = false;
+
 
   var iFrameHolder = document.createElement("div");
       iFrameHolder._own = src;
@@ -150,8 +152,6 @@ function createIframe(url,src,hash){
       iFrame.style.background = "#fff";
       iFrame.setAttribute("id","framer");
       framer = iFrame;
-
-      
     
       iFrameHolder.appendChild(iFrame);
       iFrameHolder.appendChild(disqusButton);
@@ -204,10 +204,6 @@ function closeSourceHandler(){
   setTimeout(function(){
     source.parentNode.removeChild(source);
   },1000);
-
-
-//this.parentNode.removeChild(this);
-
 }
 
 function closeiFrame(frame) {
@@ -244,7 +240,7 @@ function handleData(d){
     var link = document.createElement("a");
         link.classList.add("link");
         link.innerHTML = d.title;
-        link.setAttribute("href",d.link);
+        link.setAttribute("href",base_url + d.link);
         link._own = d.jsSRC;
         
     var paragraph = document.createElement("p");
@@ -282,7 +278,6 @@ function handleData(d){
       hashIndex = index;
     }
   });
-
   old_frame = createIframe(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
 
   infoPanel.appendChild(dataHolder);

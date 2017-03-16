@@ -17,7 +17,7 @@ var opt = {
 };
 var disqus_config;
 
-console.log('%c v_0.01' , 'font-weight: bold; color: #4caf50');
+console.log('%c v_0.02' , 'font-weight: bold; color: #4caf50');
 
 function getData(url,callback,err){
 
@@ -54,6 +54,7 @@ function handler(event) {
 
 function createIframe(url,src,hash){
 
+  console.log(url,src,hash);
   //url.replace('http', 'https');
   opt.commentsOpen = false;
   opt.commentsloaded = false;
@@ -147,6 +148,7 @@ function createIframe(url,src,hash){
       iFrameHolder.style.top = 0;
       holder.appendChild(iFrameHolder);
 
+console.log(url);
   var iFrame = document.createElement('iframe');
       iFrame.src = url;
       iFrame.style.background = "#fff";
@@ -224,7 +226,7 @@ function handleData(d){
       dataHolder.classList.add("dataHolder");
 
   opt.data.forEach(function(d,index) {
-    var article = document.createElement("button");
+    var article = document.createElement("div");
         article.classList.add("single");
         article.title = d.title;
 
@@ -278,6 +280,8 @@ function handleData(d){
       hashIndex = index;
     }
   });
+
+  console.log(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
   old_frame = createIframe(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
 
   infoPanel.appendChild(dataHolder);

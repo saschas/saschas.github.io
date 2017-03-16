@@ -6,6 +6,9 @@ var d = document;
 var base_url = 'https://saschas.github.io/';
 var holder = document.getElementById("holder");
 var infoPanel = document.getElementById('infoPanel');
+var singleExperiment = document.getElementById('single-experiment');
+var close_single_experiment = document.getElementById('close_single_experiment');
+var singleExperimentFrame = document.getElementById('single-experiment-frame');
 var old_frame = null;
 var framer = null;
 var opt = {
@@ -18,6 +21,13 @@ var opt = {
 var disqus_config;
 
 console.log('%c v_0.02' , 'font-weight: bold; color: #4caf50');
+
+close_single_experiment.addEventListener('click',function(event){
+  event.preventDefault(event);
+  singleExperimentFrame.setAttribute('src','');
+  singleExperiment.classList.remove('open');
+
+});
 
 function getData(url,callback,err){
 
@@ -222,6 +232,45 @@ function handleData(d){
 
   opt.data = d.data;
 
+  console.log(opt.data);
+
+  opt.data.forEach(function(art,index){
+
+    var article = document.createElement('article');
+        article.className= "experiment";
+
+    var link = document.createElement('a');
+        link.setAttribute('href', base_url + art.link);
+        link.setAttribute('target', '_self');
+
+        link.addEventListener('click',function(event){
+          event.preventDefault(event);
+          singleExperiment.classList.add('open');
+          singleExperimentFrame.setAttribute('src',base_url + art.link );
+        });
+
+    var h1 = document.createElement('h1');
+        h1.innerHTML = art.title;
+        
+
+    var img = document.createElement('img');
+        img.src = art.img;
+
+        link.appendChild(img);
+        link.appendChild(h1);
+if(art.content != ""){
+    var p = document.createElement('p');
+        p.innerHTML = art.content;
+        link.appendChild(p);
+}
+
+
+    article.appendChild(link);
+
+    holder.appendChild(article);
+
+  });
+/*
   var dataHolder = document.createElement("div");
       dataHolder.classList.add("dataHolder");
 
@@ -273,20 +322,22 @@ function handleData(d){
 
   });
 
-  var hash = window.location.hash.replace('#','');
+  //var hash = window.location.hash.replace('#','');
   var hashIndex = 0;
-  opt.data.forEach(function(d,index){
-    if(hash == d.hash){     
-      hashIndex = index;
-    }
-  });
+  // opt.data.forEach(function(d,index){
+  //   if(hash == d.hash){     
+  //     hashIndex = index;
+  //   }
+  // });
 
   console.log(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
   old_frame = createIframe(d.data[hashIndex].link,d.data[hashIndex].jsSRC,d.data[hashIndex].hash);
 
   infoPanel.appendChild(dataHolder);
-}
 
+  */
+}
+/*
 function setFrameLinks(){
   if(window.innerWidth > 800){
     opt.size = "large";
@@ -326,4 +377,4 @@ window.onresize = function(){
   }
 }
 
-
+*/

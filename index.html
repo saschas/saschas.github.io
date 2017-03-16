@@ -63,10 +63,12 @@
 
   </div>
     <div class="info-inner">
+      <div class="block info-content">
       <h1>Saschas Code Lab</h1>
       <p>I work as freelance developer and create threedimensional experiences for the web & VR.</p><p>This is my personal code lab. If you have any question feel free to get in touch.</p>
-      <br>
-      <div class="social">
+      
+    </div>
+      <div class="block social">
         <a href="mailto:hallo@saschasigl.com"><span class="ico mail">email</span>hallo@saschasigl.com</a>
         <a href="https://twitter.com/SaschaSigl/"><span class="ico twitter">twitter</span>@SaschaSigl</a>
         <a href="http://codepen.io/SaschaSigl/"><span class="ico codepen">codepen</span>codepen.io/SaschaSigl</a>
@@ -74,14 +76,24 @@
     </div>
     <div id="infoPanel"></div>
 
-    <footer>
-      <a href="http://www.saschasigl.com/imprint">Impressum</a>
-    </footer>
+    
   </div>
 </aside>
 
-<section id="holder"></section>
-
+<main id="holder"></main>
+<aside id="single-experiment">
+  <nav><button id="close_single_experiment">back</button></nav>
+  <div class="single-experiment-frame-loader">
+    <div class="loader-block"></div>
+    <div class="loader-block"></div>
+    <div class="loader-block"></div>
+    <div class="loader-block"></div>
+  </div>
+  <iframe id="single-experiment-frame" src=""></iframe>
+</aside>
+<footer>
+  <a href="http://www.saschasigl.com/imprint">Impressum</a>
+</footer>
 </div>
 <script src="dist/js/main.min.js"></script>
 </body>

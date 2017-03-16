@@ -17,7 +17,9 @@ var opt = {
 };
 var disqus_config;
 
+
 function getData(url,callback,err){
+
 var req = new XMLHttpRequest();
     req.open('GET',url , true);
     req.onreadystatechange = function (aEvt) {
@@ -34,6 +36,7 @@ var req = new XMLHttpRequest();
 }
 
 getData('data.json',function(d){
+
   handleData(JSON.parse(d));
 },function(){
   console.log("Error loading page\n");
@@ -43,13 +46,14 @@ getData('data.json',function(d){
 function handler(event) {
   event.preventDefault(event);
   event.stopPropagation(event);
-
   window.location.hash = this._hash;
-
+  console.log('handler');
   old_frame = createIframe(this.href,this._own[0],this._hash);
 }
 
 function createIframe(url,src,hash){
+
+  console.log('createIframe',url)
   opt.commentsOpen = false;
   opt.commentsloaded = false;
 

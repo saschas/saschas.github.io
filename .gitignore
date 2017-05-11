@@ -3,3 +3,5 @@
 /node_modules
 /experiments/shuffleText/node_modules
 /experiments/mandala/node_modules
+/experiments/vr-slideshow/node_modules
+node_modules
